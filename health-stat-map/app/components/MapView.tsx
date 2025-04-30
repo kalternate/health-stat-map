@@ -1,88 +1,48 @@
-import { useEffect, useRef, useState } from "react";
 import countriesShapeDataJson from "../data/country_shapes.json"
+import { MapContainer, Polygon, SVGOverlay, TileLayer } from "react-leaflet";
+
+function adjustCoordinateList(coordList: number[][]) {
+    return coordList.map(adjustCoordinates);
+}
+
+function adjustCoordinates(point: number[]) {
+    return [point[1], point[0]]
+}
 
 export default function MapView() {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-
-    const [mouseDown, setMouseDown] = useState(false);
-    const [mapOffset, setMapOffset] = useState([0, 0]);
-
     const countriesShapeData: any = countriesShapeDataJson;
+    const polygons = [];
 
-    function adjustX(x: number) {
-        return x * 10 + mapOffset[0];
-    }
+    for (const countryShapeData of countriesShapeData) {
+        const geometry = countryShapeData.geo_shape.geometry;
 
-    function adjustY(y: number) {
-        return -y * 10 + mapOffset[1];
-    }
+        if (geometry.type === "Polygon") {
+            const coordinates = geometry.coordinates.map(adjustCoordinateList);
+            polygons.push(coordinates)
+        } else if (geometry.type === "MultiPolygon") {
+            for (const rawCoordinates of geometry.coordinates) {
+                const coordinates = rawCoordinates.map(adjustCoordinateList);
+                polygons.push(coordinates)
 
-    function drawMap() {
-        const canvas = canvasRef.current;
-        if (canvas === null) return;
-        const context = canvas.getContext('2d');
-        if (context === null) return;
-
-        context.strokeStyle = 'black';
-        context.lineJoin = 'round';
-        context.lineCap = 'round';
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight
-
-        context.clearRect(0, 0, canvas.width, canvas.height);
-
-        for (const countryShapeData of countriesShapeData) {
-            const geometry = countryShapeData.geo_shape.geometry;
-
-            if (geometry.type === "Polygon") {
-                const shapes: number[][][] = geometry.coordinates;
-                for (const shape of shapes) {
-                    context.beginPath()
-                    context.lineWidth = 2;
-                    context.moveTo(adjustX(shape[0][0]), adjustY(shape[0][1]));
-                    for (let i = 1; i < shape.length; i++) {
-                        context.lineTo(adjustX(shape[i][0]), adjustY(shape[i][1]));
-                    }
-                    context.lineTo(adjustX(shape[0][0]), adjustY(shape[0][1]));
-
-                    context.stroke()
-
-                }
-            } else if (geometry.type === "MultiPolygon") {
-                const shapes: number[][][][] = geometry.coordinates;
-                for (const innerShapes of shapes) {
-                    for (const shape of innerShapes) {
-                        context.beginPath()
-                        context.lineWidth = 2;
-                        context.moveTo(adjustX(shape[0][0]), adjustY(shape[0][1]));
-                        for (let i = 1; i < shape.length; i++) {
-                            context.lineTo(adjustX(shape[i][0]), adjustY(shape[i][1]));
-                        }
-                        context.lineTo(adjustX(shape[0][0]), adjustY(shape[0][1]));
-                        context.stroke()
-    
-                    }
-                }
             }
-
-        }
-    }
-
-    useEffect(drawMap);
-
-    function onMouseMove(event: React.MouseEvent<HTMLElement>) {
-        if (event.buttons === 1) {
-            setMapOffset([mapOffset[0] + event.movementX, mapOffset[1] + event.movementY])
         }
     }
 
     return (
-        <div className="size-full">
-            <canvas
-                ref={canvasRef}
-                onMouseMove={onMouseMove}
-            />
+        <div className="">
+            <div className="flex h-screen">
+                <MapContainer className="flex-1 h-full min-h-full" center={[20, 0]} zoom={2.5} scrollWheelZoom={true}>
+                    <TileLayer
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+
+                    {polygons.map((polygon) => {
+                        return (
+                            <Polygon positions={polygon}></Polygon>
+                        )
+                    })}
+                </MapContainer>
+            </div>
         </div>
     );
 }
