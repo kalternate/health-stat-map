@@ -1,0 +1,21 @@
+{
+  "malaria": {
+    "MALARIA_EST_INCIDENCE": "Estimated malaria incidence (per 1000 population at risk)",
+    "MALARIA_EST_MORTALITY": "Estimated malaria mortality rate (per 100 000 population)",
+    "MALARIA_EST_CASES": "Estimated number of malaria cases",
+    "MALARIA_EST_DEATHS": "Estimated number of malaria deaths",
+  },
+
+  "hiv": {
+    "HIV_0000000001": "Estimated number of people (all ages) living with HIV",
+    "HIV_0000000006": "Number of people dying from HIV-related causes",
+    "HIV_0000000026": "Number of new HIV infections",
+  },
+
+  "tb": {
+    "MDG_0000000020": "Incidence of tuberculosis (per 100 000 population per year)",
+    "TB_e_inc_tbhiv_100k": "Incidence of tuberculosis (per 100 000 population) (HIV-positive cases)",
+    "TB_e_inc_num": "Number of incident tuberculosis cases",
+    "TB_e_mort_exc_tbhiv_num": "Number of deaths due to tuberculosis, excluding HIV",
+  }
+}
