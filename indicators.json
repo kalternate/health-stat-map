@@ -14,8 +14,14 @@
 
   "tb": {
     "MDG_0000000020": "Incidence of tuberculosis (per 100 000 population per year)",
-    "TB_e_inc_tbhiv_100k": "Incidence of tuberculosis (per 100 000 population) (HIV-positive cases)",
+    "MDG_0000000017": "Deaths due to tuberculosis among HIV-negative people (per 100 000 population)",
     "TB_e_inc_num": "Number of incident tuberculosis cases",
     "TB_e_mort_exc_tbhiv_num": "Number of deaths due to tuberculosis, excluding HIV",
+  },
+
+  "cholera": {
+    "CHOLERA_0000000002": "Number of reported deaths from cholera", 
+    "CHOLERA_0000000001": "Number of reported cases of cholera", 
+    "CHOLERA_0000000003": "Cholera case fatality rate"
   }
 }
