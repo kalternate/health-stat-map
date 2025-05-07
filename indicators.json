@@ -7,9 +7,10 @@
   },
 
   "hiv": {
+    "SDGHIV": "New HIV infections (per 1000 uninfected population)", 
     "HIV_0000000001": "Estimated number of people (all ages) living with HIV",
-    "HIV_0000000006": "Number of people dying from HIV-related causes",
     "HIV_0000000026": "Number of new HIV infections",
+    "HIV_0000000006": "Number of people dying from HIV-related causes",
   },
 
   "tb": {
