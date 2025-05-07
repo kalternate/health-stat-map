@@ -8,6 +8,7 @@
 
   "hiv": {
     "SDGHIV": "New HIV infections (per 1000 uninfected population)", 
+    "WHS2_138": "Deaths due to HIV/AIDS (per 100 000 population)", 
     "HIV_0000000001": "Estimated number of people (all ages) living with HIV",
     "HIV_0000000026": "Number of new HIV infections",
     "HIV_0000000006": "Number of people dying from HIV-related causes",
