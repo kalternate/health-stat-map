@@ -4,7 +4,7 @@ By Keagan Edwards, Danny Alder, Dylan Karter, & Mason Nicholas.
 
 ## Getting Started
 
-1. Make sure you have Node.JS installed. It should already be installed on the lab machines.
+1. First, make sure you have Node.js and npm installed. It should already be installed on the lab machines.
 
 2. Enter the following commands:
 ```sh
