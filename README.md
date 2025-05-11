@@ -13,7 +13,7 @@ npm i
 npm run dev
 ```
 
-3. You should see something that looks like the following. Use your web browswer to nagigate to the specificed local HTTP address. It may be different from the example below
+3. You should see something that looks like the following. Use your web browswer to navigate to the specified local HTTP address. You may be able to do this by control-clicking the address in the terminal. It may be different from the example below.
 ```
 > dev
 > react-router dev
