@@ -23,4 +23,6 @@ npm run dev
   ➜  press h + enter to show help
 ```
 
-4. Now you should see the home page. Press the blue link in the center to navigate to the map page. Use the left side panel to select a data indicator.
+4. Now you should see the home page. Press the blue link in the center to navigate to the map page. You may have to click the link multiple times in dev mode. Once you see the map, use the left side panel to select a data indicator.
+
+![image](https://github.com/user-attachments/assets/f67defd6-ea94-49a4-854f-5e200487519f)
