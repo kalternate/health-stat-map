@@ -6,14 +6,14 @@ By Keagan Edwards, Danny Alder, Dylan Karter, & Mason Nicholas.
 
 1. First, make sure you have Node.js and npm installed. It should already be installed on the lab machines.
 
-2. Enter the following commands:
+2. Enter the following commands. Note that it make take a while to install all the npm packages the first time you run `npm i`.
 ```sh
 cd health-stat-map
 npm i
 npm run dev
 ```
 
-3. You should see soemthing that looks like the following. Use your web browswer to nagigate to the specificed local HTTP address. It may be different from the example below
+3. You should see something that looks like the following. Use your web browswer to nagigate to the specificed local HTTP address. It may be different from the example below
 ```
 > dev
 > react-router dev
