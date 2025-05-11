@@ -1,0 +1,70 @@
+[
+    {
+        "id": "malaria",
+        "title": "Malaria",
+        "indicators": [
+                        {
+                "id": "MALARIA_EST_INCIDENCE",
+                "title": "Malaria incidence",
+                "subtitle": "Malaria cases per 1,000 people at risk (estimated)",
+                "start": 2000,
+                "end": 2023
+            },
+                                    {
+                "id": "MALARIA_EST_MORTALITY",
+                "title": "Malaria mortality",
+                "subtitle": "Malaria deaths per 1,000,000 people (estimated)",
+                "start": 2000,
+                "end": 2023
+            },
+            {
+                "id": "MALARIA_EST_CASES",
+                "title": "Malaria case",
+                "subtitle": "Number of malaria cases (estimated)",
+                "start": 2000,
+                "end": 2023
+            },
+                        {
+                "id": "MALARIA_EST_DEATHS",
+                "title": "Malaria deaths",
+                "subtitle": "Number of malaria deaths (estimated)",
+                "start": 2000,
+                "end": 2023
+            }
+        ]
+    },
+    {
+        "id": "tb",
+        "title": "Tuberculosis (TB)",
+        "indicators": [
+                        {
+                "id": "MDG_0000000020",
+                "title": "TB incidence",
+                "subtitle": "TB cases per 1,000,000 people",
+                "start": 2000,
+                "end": 2023
+            },
+                                    {
+                "id": "MDG_0000000017",
+                "title": "TB mortality",
+                "subtitle": "Deaths due to TB among HIV-negative people per 100,000 people",
+                "start": 2000,
+                "end": 2023
+            },
+            {
+                "id": "TB_e_inc_num",
+                "title": "TB cases",
+                "subtitle": "Number of TB cases",
+                "start": 2000,
+                "end": 2023
+            },
+                        {
+                "id": "TB_e_mort_exc_tbhiv_num",
+                "title": "TB deaths",
+                "subtitle": "Number of deaths due to TB excluding HIV",
+                "start": 2000,
+                "end": 2023
+            }
+        ]
+    }
+]

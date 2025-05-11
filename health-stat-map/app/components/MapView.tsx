@@ -29,8 +29,7 @@ export default function MapView() {
     }
 
     return (
-        <div className="">
-            <div className="flex h-screen">
+            <div className="flex h-screen grow">
                 <MapContainer className="flex-1 h-full min-h-full" center={[20, 0]} zoom={2.5} scrollWheelZoom={true}>
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -43,6 +42,5 @@ export default function MapView() {
                     })}
                 </MapContainer>
             </div>
-        </div>
     );
 }
