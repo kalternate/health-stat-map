@@ -1,10 +1,12 @@
 import { useState, type PropsWithChildren } from "react";
-import type { IndicatorCategory } from "../routes/MapPage";
+import type { Indicator, IndicatorCategory } from "../routes/MapPage";
 import IndicatorSelector from "./IndicatorSelector";
 
 
 interface CategoryDropdownProps {
-    category: IndicatorCategory
+    category: IndicatorCategory,
+    selectedIndicator: Indicator | null,
+    setSelectedIndicator: (value: Indicator) => void
 }
 
 export default function CategoryDropdown(props: CategoryDropdownProps) {
@@ -24,7 +26,7 @@ export default function CategoryDropdown(props: CategoryDropdownProps) {
             {props.category.indicators.map((indicator) => {
                 return (
                     <div>
-                <IndicatorSelector indicator={indicator}/>
+                <IndicatorSelector indicator={indicator} selectedIndicator={props.selectedIndicator} setSelectedIndicator={props.setSelectedIndicator}/>
                 <hr className="text-zinc-400"></hr>
                 </div>
                 );

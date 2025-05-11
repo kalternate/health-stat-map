@@ -1,13 +1,18 @@
 import type { Indicator } from "../routes/MapPage";
 
 interface IndicatorSelectorProps {
-    indicator: Indicator
+    indicator: Indicator,
+    selectedIndicator: Indicator | null,
+    setSelectedIndicator: (value: Indicator) => void
 }
 
 export default function IndicatorSelector(props: IndicatorSelectorProps) {
+    const pressed = props.indicator.id === props.selectedIndicator?.id;
+    const onClick = () => props.setSelectedIndicator(props.indicator);
+
     return (
         <div className="w-full px-1 py-1">
-        <button className="text-left px-3 py-1 flex flex-col gap-0 hover:bg-zinc-200 rounded-lg w-full cursor-pointer">
+        <button className="text-left px-3 py-1 flex flex-col gap-0 hover:bg-zinc-200 active:bg-rose-200 disabled:bg-rose-200 border-1 border-zinc-100 disabled:border-rose-800 w-full cursor-pointer transition-colors" disabled={pressed} onClick={onClick}>
             <div className="text-lg">
                 {props.indicator.title}
             </div>
