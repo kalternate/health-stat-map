@@ -1,0 +1,1 @@
+import{w as t}from"./with-props-kzHvLkVr.js";import{o as e,s}from"./chunk-AYJ5UCUI-C-GluKN3.js";const l=t(function(){return e.jsxs("div",{className:"p-5 flex flex-col items-center gap-5 bg-gray-100",children:[e.jsx("h1",{className:"text-5xl",children:"HealthStatMap"}),e.jsx(s,{className:"text-3xl underline text-sky-500",to:"/map",children:"Go to Map"})]})});export{l as default};
