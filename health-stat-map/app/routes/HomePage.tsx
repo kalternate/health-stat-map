@@ -9,8 +9,11 @@ import { Link } from "react-router";
 
 export default function HomePage() {
   return (
-  <div className="p-5 flex flex-col items-center gap-5 bg-gray-100">
-    <h1 className="text-5xl">HealthStatMap</h1>
-    <Link className="text-3xl underline text-sky-500" to="/map">Go to Map</Link>
-  </div>);
+    <div className="flex flex-col items-center gap-5 bg-gray-100 p-5">
+      <h1 className="text-5xl">HealthStatMap</h1>
+      <Link className="text-3xl text-sky-500 underline" to="/map">
+        Go to Map
+      </Link>
+    </div>
+  );
 }

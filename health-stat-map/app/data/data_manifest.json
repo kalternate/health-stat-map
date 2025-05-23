@@ -1,155 +1,155 @@
 [
-    {
-        "id": "malaria",
-        "title": "Malaria",
-        "indicators": [
-                        {
-                "id": "MALARIA_EST_INCIDENCE",
-                "title": "Malaria incidence",
-                "subtitle": "Malaria cases per 1,000 people at risk (estimated)",
-                "category": "malaria",
-                "start": 2000,
-                "end": 2023
-            },
-                                    {
-                "id": "MALARIA_EST_MORTALITY",
-                "title": "Malaria mortality",
-                "subtitle": "Malaria deaths per 1,000,000 people (estimated)",
-                "category": "malaria",
-                "start": 2000,
-                "end": 2023
-            },
-            {
-                "id": "MALARIA_EST_CASES",
-                "title": "Malaria case",
-                "subtitle": "Number of malaria cases (estimated)",
-                "category": "malaria",
-                "start": 2000,
-                "end": 2023
-            },
-                        {
-                "id": "MALARIA_EST_DEATHS",
-                "title": "Malaria deaths",
-                "subtitle": "Number of malaria deaths (estimated)",
-                "category": "malaria",
-                "start": 2000,
-                "end": 2023
-            }
-        ]
-    },
-    {
-        "id": "tb",
-        "title": "Tuberculosis (TB)",
-        "indicators": [
-                        {
-                "id": "MDG_0000000020",
-                "title": "TB incidence",
-                "subtitle": "TB cases per 1,000,000 people",
-                "category": "tb",
-                "start": 2000,
-                "end": 2023
-            },
-                                    {
-                "id": "MDG_0000000017",
-                "title": "TB mortality",
-                "subtitle": "Deaths due to TB among HIV-negative people per 100,000 people",
-                "category": "tb",
-                "start": 2000,
-                "end": 2023
-            },
-            {
-                "id": "TB_e_inc_num",
-                "title": "TB cases",
-                "subtitle": "Number of TB cases",
-                "category": "tb",
-                "start": 2000,
-                "end": 2023
-            },
-            {
-                "id": "TB_e_mort_exc_tbhiv_num",
-                "title": "TB deaths",
-                "subtitle": "Number of deaths due to TB excluding HIV",
-                "category": "tb",
-                "start": 2000,
-                "end": 2023
-            }
-        ]
-    },
-    {
-        "id": "hiv",
-        "title": "HIV/AIDS",
-        "indicators": [
-            {
-                "id": "SDGHIV",
-                "title": "HIV incidence",
-                "subtitle": "New HIV infections per 1,000 uninfected people",
-                "category": "hiv",
-                "start": 1990,
-                "end": 2023,
-                "gendered": true
-            },
-            {
-                "id": "WHS2_138",
-                "title": "HIV mortality",
-                "subtitle": "Deaths due to HIV/AIDS per 1,000,000 people",
-                "category": "hiv",
-                "start": 2001,
-                "end": 2012
-            },
-            {
-                "id": "HIV_0000000001",
-                "title": "People living with HIV",
-                "subtitle": "Number of people living with HIV (estimated)",
-                "category": "hiv",
-                "start": 1990,
-                "end": 2023
-            },
-            {
-                "id": "HIV_0000000026",
-                "title": "New HIV infections",
-                "subtitle": "Number of new HIV infections",
-                "category": "hiv",
-                "start": 1990,
-                "end": 2023
-            },
-            {
-                "id": "HIV_0000000006",
-                "title": "HIV deaths",
-                "subtitle": "Number of people dying from HIV-related causes",
-                "category": "hiv",
-                "start": 1990,
-                "end": 2023
-            }
-        ]
-    },
-    {
-        "id": "cholera",
-        "title": "Cholera",
-        "indicators": [
-            {
-                "id": "cases",
-                "title": "Cholera cases",
-                "subtitle": "Number of reported cases of cholera",
-                "category": "cholera",
-                "start": 1950,
-                "end": 2016
-            },
-                        {
-                "id": "deaths",
-                "title": "Cholera deaths",
-                "subtitle": "Number of reported deaths from cholera",
-                "category": "cholera",
-                "start": 1950,
-                "end": 2016
-            },
-            {
-                "id": "fatality_rate",
-                "title": "Cholera fatality rate",
-                "subtitle": "Cholera case fatality rate",
-                "category": "cholera",
-                "start": 1950,
-                "end": 2016
-            }
-        ]
-    }
+  {
+    "id": "malaria",
+    "title": "Malaria",
+    "indicators": [
+      {
+        "id": "MALARIA_EST_INCIDENCE",
+        "title": "Malaria incidence",
+        "subtitle": "Malaria cases per 1,000 people at risk (estimated)",
+        "category": "malaria",
+        "start": 2000,
+        "end": 2023
+      },
+      {
+        "id": "MALARIA_EST_MORTALITY",
+        "title": "Malaria mortality",
+        "subtitle": "Malaria deaths per 1,000,000 people (estimated)",
+        "category": "malaria",
+        "start": 2000,
+        "end": 2023
+      },
+      {
+        "id": "MALARIA_EST_CASES",
+        "title": "Malaria case",
+        "subtitle": "Number of malaria cases (estimated)",
+        "category": "malaria",
+        "start": 2000,
+        "end": 2023
+      },
+      {
+        "id": "MALARIA_EST_DEATHS",
+        "title": "Malaria deaths",
+        "subtitle": "Number of malaria deaths (estimated)",
+        "category": "malaria",
+        "start": 2000,
+        "end": 2023
+      }
+    ]
+  },
+  {
+    "id": "tb",
+    "title": "Tuberculosis (TB)",
+    "indicators": [
+      {
+        "id": "MDG_0000000020",
+        "title": "TB incidence",
+        "subtitle": "TB cases per 1,000,000 people",
+        "category": "tb",
+        "start": 2000,
+        "end": 2023
+      },
+      {
+        "id": "MDG_0000000017",
+        "title": "TB mortality",
+        "subtitle": "Deaths due to TB among HIV-negative people per 100,000 people",
+        "category": "tb",
+        "start": 2000,
+        "end": 2023
+      },
+      {
+        "id": "TB_e_inc_num",
+        "title": "TB cases",
+        "subtitle": "Number of TB cases",
+        "category": "tb",
+        "start": 2000,
+        "end": 2023
+      },
+      {
+        "id": "TB_e_mort_exc_tbhiv_num",
+        "title": "TB deaths",
+        "subtitle": "Number of deaths due to TB excluding HIV",
+        "category": "tb",
+        "start": 2000,
+        "end": 2023
+      }
+    ]
+  },
+  {
+    "id": "hiv",
+    "title": "HIV/AIDS",
+    "indicators": [
+      {
+        "id": "SDGHIV",
+        "title": "HIV incidence",
+        "subtitle": "New HIV infections per 1,000 uninfected people",
+        "category": "hiv",
+        "start": 1990,
+        "end": 2023,
+        "gendered": true
+      },
+      {
+        "id": "WHS2_138",
+        "title": "HIV mortality",
+        "subtitle": "Deaths due to HIV/AIDS per 1,000,000 people",
+        "category": "hiv",
+        "start": 2001,
+        "end": 2012
+      },
+      {
+        "id": "HIV_0000000001",
+        "title": "People living with HIV",
+        "subtitle": "Number of people living with HIV (estimated)",
+        "category": "hiv",
+        "start": 1990,
+        "end": 2023
+      },
+      {
+        "id": "HIV_0000000026",
+        "title": "New HIV infections",
+        "subtitle": "Number of new HIV infections",
+        "category": "hiv",
+        "start": 1990,
+        "end": 2023
+      },
+      {
+        "id": "HIV_0000000006",
+        "title": "HIV deaths",
+        "subtitle": "Number of people dying from HIV-related causes",
+        "category": "hiv",
+        "start": 1990,
+        "end": 2023
+      }
+    ]
+  },
+  {
+    "id": "cholera",
+    "title": "Cholera",
+    "indicators": [
+      {
+        "id": "cases",
+        "title": "Cholera cases",
+        "subtitle": "Number of reported cases of cholera",
+        "category": "cholera",
+        "start": 1950,
+        "end": 2016
+      },
+      {
+        "id": "deaths",
+        "title": "Cholera deaths",
+        "subtitle": "Number of reported deaths from cholera",
+        "category": "cholera",
+        "start": 1950,
+        "end": 2016
+      },
+      {
+        "id": "fatality_rate",
+        "title": "Cholera fatality rate",
+        "subtitle": "Cholera case fatality rate",
+        "category": "cholera",
+        "start": 1950,
+        "end": 2016
+      }
+    ]
+  }
 ]
