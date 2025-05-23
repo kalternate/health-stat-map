@@ -1,0 +1,1 @@
+export { mapColors } from "./mapColors";

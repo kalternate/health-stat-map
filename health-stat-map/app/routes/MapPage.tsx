@@ -3,6 +3,7 @@ import MapView from "../components/MapView";
 import dataManifest from "../data/data_manifest.json";
 import { useEffect, useState } from "react";
 import { parse } from "papaparse";
+import MapKey from "~/components/MapKey";
 
 export interface IndicatorCategory {
   id: string;
@@ -69,7 +70,7 @@ export default function MapPage() {
   });
 
   return (
-    <div className="flex-ro flex">
+    <div className="flex flex-row">
       <div className="flex max-h-screen w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
         {indicatorCategories.map((category) => {
           return (
@@ -81,7 +82,14 @@ export default function MapPage() {
           );
         })}
       </div>
-      <MapView data={currentData} max={currentMax} />
+      <div className="relative grow">
+        <MapView data={currentData} max={currentMax} />
+        <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end">
+          {selectedIndicator && (
+            <MapKey maxValue={currentMax} indicator={selectedIndicator} />
+          )}
+        </div>
+      </div>
     </div>
   );
 }

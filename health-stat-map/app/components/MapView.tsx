@@ -1,3 +1,4 @@
+import { mapColors } from "~/utils";
 import countriesShapeDataJson from "../data/country_shapes.json";
 import { MapContainer, Polygon, SVGOverlay, TileLayer } from "react-leaflet";
 
@@ -20,17 +21,15 @@ export default function MapView(props: MapViewProps) {
 
   const noDataColor = "#27272a";
 
-  const colorScheme = ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"];
-
   function addPolygon(coordinates: any, countryCode: string) {
     let color = noDataColor;
     if (props.data.has(countryCode)) {
       const value = props.data.get(countryCode);
       if (typeof value === "number") {
         const adjustedValue = value / props.max;
-        let colorIndex = Math.floor(adjustedValue * colorScheme.length);
-        if (colorIndex === colorScheme.length) colorIndex--;
-        color = colorScheme[colorIndex];
+        let colorIndex = Math.floor(adjustedValue * mapColors.length);
+        if (colorIndex === mapColors.length) colorIndex--;
+        color = mapColors[colorIndex];
       }
     }
 
@@ -63,7 +62,7 @@ export default function MapView(props: MapViewProps) {
   }
 
   return (
-    <div className="flex h-screen grow">
+    <div className="z-0 flex h-screen grow">
       <MapContainer
         className="h-full min-h-full flex-1"
         center={[20, 0]}

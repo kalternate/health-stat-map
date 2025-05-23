@@ -1,0 +1,47 @@
+import type { Indicator } from "~/routes/MapPage";
+import { mapColors } from "~/utils";
+
+interface MapKeyProps {
+  maxValue: number;
+  indicator: Indicator;
+}
+
+export default function MapKey(props: MapKeyProps) {
+  const spanLength = props.maxValue / mapColors.length;
+
+  const formatter = new Intl.NumberFormat("en-US", {
+    maximumSignificantDigits: 3,
+    notation: "compact",
+  });
+
+  let colorIndexCounter = 0;
+
+  return (
+    <div className="m-5 flex w-48 flex-col rounded-md border-1 border-zinc-600 bg-zinc-100 p-2 pointer-events-auto">
+      <h2 className="font-bold">Key</h2>
+      <div className="mb-2 text-sm text-zinc-700">
+        {props.indicator.subtitle}
+      </div>
+      <div className="flex flex-col-reverse">
+        {mapColors.map((color) => {
+          const colorIndex = colorIndexCounter;
+          colorIndexCounter += 1;
+          return (
+            <div className="flex flex-row items-center gap-2">
+              <div
+                className="h-5 w-5 border-1 border-zinc-600"
+                style={{ backgroundColor: color }}
+              />
+
+              <div className="text-right">
+                {formatter.format(spanLength * (colorIndex + 1))}
+              </div>
+              <div> &ndash; </div>
+              <div> {formatter.format(spanLength * colorIndex)}</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
