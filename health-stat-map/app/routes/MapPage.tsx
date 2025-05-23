@@ -4,6 +4,7 @@ import dataManifest from "../data/data_manifest.json";
 import { useEffect, useState } from "react";
 import { parse } from "papaparse";
 import MapKey from "~/components/MapKey";
+import MapYearSelector from "~/components/MapYearSelector";
 
 export interface IndicatorCategory {
   id: string;
@@ -34,15 +35,20 @@ export default function MapPage() {
   );
   const [currentMax, setCurrentMax] = useState<number>(0);
 
+  const [selectedYear, setSelectedYear] = useState<number>(NaN);
+  const [currentYear, setCurrentYear] = useState<number>(NaN);
+
   const indicatorCategories: IndicatorCategory[] = dataManifest;
 
   useEffect(() => {
     if (selectedIndicator === null) return;
-    if (selectedIndicator.id === currentIndicator?.id) return;
+    const year = isNaN(selectedYear) ? selectedIndicator.end : selectedYear;
+    if (isNaN(selectedYear)) setSelectedYear(year);
+    if (selectedIndicator.id === currentIndicator?.id && year === currentYear) return;
 
-    let url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${selectedIndicator.end}.csv`;
+    let url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${year}.csv`;
     if (selectedIndicator.gendered) {
-      url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${selectedIndicator.end}_both.csv`;
+      url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${year}_both.csv`;
     }
 
     const newData = new Map<string, number>();
@@ -65,6 +71,7 @@ export default function MapPage() {
         setCurrentData(newData);
         setCurrentIndicator(selectedIndicator);
         setCurrentMax(newMax);
+        setCurrentYear(year);
       },
     });
   });
@@ -84,9 +91,16 @@ export default function MapPage() {
       </div>
       <div className="relative grow">
         <MapView data={currentData} max={currentMax} />
-        <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end">
+        <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end p-4 gap-4">
           {selectedIndicator && (
-            <MapKey maxValue={currentMax} indicator={selectedIndicator} />
+            <>
+              <MapKey maxValue={currentMax} indicator={selectedIndicator} />
+              <MapYearSelector
+                selectedYear={selectedYear}
+                setSelectedYear={setSelectedYear}
+                indicator={selectedIndicator}
+              />
+            </>
           )}
         </div>
       </div>

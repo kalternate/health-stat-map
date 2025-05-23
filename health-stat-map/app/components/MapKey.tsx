@@ -17,7 +17,7 @@ export default function MapKey(props: MapKeyProps) {
   let colorIndexCounter = 0;
 
   return (
-    <div className="m-5 flex w-48 flex-col rounded-md border-1 border-zinc-600 bg-zinc-100 p-2 pointer-events-auto">
+    <div className="pointer-events-auto flex w-48 flex-col rounded-md border-1 border-zinc-600 bg-zinc-100 p-2">
       <h2 className="font-bold">Key</h2>
       <div className="mb-2 text-sm text-zinc-700">
         {props.indicator.subtitle}
