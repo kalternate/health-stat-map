@@ -38,13 +38,29 @@ export default function MapPage() {
   const [selectedYear, setSelectedYear] = useState<number>(NaN);
   const [currentYear, setCurrentYear] = useState<number>(NaN);
 
+  const [renderDelay, setRenderDelay] = useState<number>(0);
+
   const indicatorCategories: IndicatorCategory[] = dataManifest;
+
+  const selectYear = (year: number) => {
+    setRenderDelay(100);
+    setSelectedYear(year);
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+        setRenderDelay((prevDelay) => prevDelay <= 0 ? prevDelay : prevDelay-20)
+    }, 20);
+
+    return () => clearInterval(interval);
+  });
 
   useEffect(() => {
     if (selectedIndicator === null) return;
     const year = isNaN(selectedYear) ? selectedIndicator.end : selectedYear;
     if (isNaN(selectedYear)) setSelectedYear(year);
     if (selectedIndicator.id === currentIndicator?.id && year === currentYear) return;
+    if (renderDelay > 0) return;
 
     let url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${year}.csv`;
     if (selectedIndicator.gendered) {
@@ -97,7 +113,7 @@ export default function MapPage() {
               <MapKey maxValue={currentMax} indicator={selectedIndicator} />
               <MapYearSelector
                 selectedYear={selectedYear}
-                setSelectedYear={setSelectedYear}
+                setSelectedYear={selectYear}
                 indicator={selectedIndicator}
               />
             </>
