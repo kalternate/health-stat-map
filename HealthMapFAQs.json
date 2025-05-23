@@ -1,0 +1,43 @@
+[
+  {
+    "question": "What is the purpose of this map?",
+    "answer": "The map was designed to help raise awareness of growing disparities in healthcare coverage across the globe. The map is designed to provide real-time global health statistics on different diseases around the world."
+  },
+  {
+    "question": "Who is the intended user?",
+    "answer": "This tool was made with everyone in mind, whether you are a student, educator, or public health professional."
+  },
+  {
+    "question": "Why are some countries shown in darker colors on the map?",
+    "answer": "Darker colors represent a higher prevalence or severity of the selected health issue. This visual cue helps users better understand countries who have a greater issue."
+  },
+  {
+    "question": "Where is the data coming from?",
+    "answer": "The data on the map comes from The World Health Organization (WHO). The development team wanted to make sure that the data was reliable, accurate, and up to date to ensure that we avoid bias."
+  },
+  {
+    "question": "Can I download the health data?",
+    "answer": "Yes, you can download the data using the table format for your own analysis, projects, or decision making."
+  },
+  {
+    "question": "How does this map help reach the UN’s goal of universal healthcare by 2030?",
+    "answer": "By increasing awareness, educating users, and directing funding and advocacy to disparately impacted communities we can create global change and collaboration towards the UN's goal."
+  },
+  {
+    "question": "How is this map different from other public health tools?",
+    "answer": "Unlike many other reports, this map is interactive and allows the user to look at a wide range of different features. The data the map uses is also updated regularly to ensure that the information presented is reliable."
+  },
+  {
+    "question": "Is there support for non-English speakers?",
+    "answer": "While there is only an English version of the map currently, future updates will include multilingual support to improve accessibility for users around the globe."
+  },
+  {
+    "question": "What are some limitations of the data shown?",
+    "answer": "While the development team strives for accuracy, data availability, and up to date statistics. Data availability can vary by country, some regions may have outdated, incomplete, or misreported data."
+  },
+  {
+    "question": "How can I share this map with others?",
+    "answer": "The map can be shared by copying the link for the website. Screenshots can also be uploaded to social media, email, or other education platforms to help raise awareness."
+  }
+]
+    
