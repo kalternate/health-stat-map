@@ -43,10 +43,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <div className="flex flex-col h-screen">
-      <TopPanel/>
+  return (
+    <div className="flex h-screen flex-col">
+      <TopPanel />
       <Outlet />
-    </div>;
+    </div>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

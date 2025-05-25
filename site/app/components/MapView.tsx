@@ -1,10 +1,18 @@
-import { mapColors } from "~/utils";
+import { getFlagEmoji, mapColors, numberFormatter } from "~/utils";
 import countriesShapeDataJson from "../data/country_shapes.json";
-import { MapContainer, Polygon, SVGOverlay, TileLayer } from "react-leaflet";
+import {
+  MapContainer,
+  Polygon,
+  Popup,
+  SVGOverlay,
+  TileLayer,
+} from "react-leaflet";
+import type { Indicator } from "~/routes/MapPage";
 
 interface MapViewProps {
   data: Map<string, number>;
   max: number;
+  indicator?: Indicator;
 }
 
 function adjustCoordinateList(coordList: number[][]) {
@@ -21,12 +29,19 @@ export default function MapView(props: MapViewProps) {
 
   const noDataColor = "#27272a";
 
-  function addPolygon(coordinates: any, countryCode: string) {
+  function addPolygon(
+    coordinates: any,
+    countryCodeIso3: string,
+    countryCodeIso2: string,
+    countryName: string,
+  ) {
     let color = noDataColor;
-    if (props.data.has(countryCode)) {
-      const value = props.data.get(countryCode);
-      if (typeof value === "number") {
-        const adjustedValue = value / props.max;
+    let value = NaN;
+    if (props.data.has(countryCodeIso3)) {
+      const localValue = props.data.get(countryCodeIso3);
+      if (typeof localValue === "number") {
+        value = localValue;
+        const adjustedValue = localValue / props.max;
         let colorIndex = Math.floor(adjustedValue * mapColors.length);
         if (colorIndex === mapColors.length) colorIndex--;
         color = mapColors[colorIndex];
@@ -35,6 +50,9 @@ export default function MapView(props: MapViewProps) {
 
     const polygon = {
       coordinates: coordinates,
+      countryName: countryName,
+      flagEmoji: getFlagEmoji(countryCodeIso2),
+      value: value,
       options: {
         color: "#18181b",
         weight: 1.5,
@@ -48,15 +66,17 @@ export default function MapView(props: MapViewProps) {
 
   for (const countryShapeData of countriesShapeData) {
     const geometry = countryShapeData.geo_shape.geometry;
-    const countryCode = countryShapeData.iso3;
+    const countryCodeIso3 = countryShapeData.iso3;
+    const countryCodeIso2 = countryShapeData.iso2;
+    const countryName = countryShapeData.cntry_name;
 
     if (geometry.type === "Polygon") {
       const coordinates = geometry.coordinates.map(adjustCoordinateList);
-      addPolygon(coordinates, countryCode);
+      addPolygon(coordinates, countryCodeIso3, countryCodeIso2, countryName);
     } else if (geometry.type === "MultiPolygon") {
       for (const rawCoordinates of geometry.coordinates) {
         const coordinates = rawCoordinates.map(adjustCoordinateList);
-        addPolygon(coordinates, countryCode);
+        addPolygon(coordinates, countryCodeIso3, countryCodeIso2, countryName);
       }
     }
   }
@@ -76,7 +96,21 @@ export default function MapView(props: MapViewProps) {
             <Polygon
               pathOptions={polygon.options}
               positions={polygon.coordinates}
-            ></Polygon>
+            >
+              <Popup>
+                <div className="font-bold text-base">{polygon.flagEmoji} {polygon.countryName}</div>
+                {isNaN(polygon.value) ? (
+                  <div className="font w-50 text-justify text-xsm">No data</div>
+                ) : (
+                  <div className="font w-60 text-justify  text-xs">
+                    <span className="font-bold underline">
+                      {numberFormatter.format(polygon.value)}
+                    </span>{" "}
+                    {props.indicator?.subtitle}
+                  </div>
+                )}
+              </Popup>
+            </Polygon>
           );
         })}
       </MapContainer>

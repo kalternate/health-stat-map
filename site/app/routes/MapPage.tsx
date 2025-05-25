@@ -45,11 +45,13 @@ export default function MapPage() {
   const selectYear = (year: number) => {
     setRenderDelay(100);
     setSelectedYear(year);
-  }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-        setRenderDelay((prevDelay) => prevDelay <= 0 ? prevDelay : prevDelay-20)
+      setRenderDelay((prevDelay) =>
+        prevDelay <= 0 ? prevDelay : prevDelay - 20,
+      );
     }, 20);
 
     return () => clearInterval(interval);
@@ -59,7 +61,8 @@ export default function MapPage() {
     if (selectedIndicator === null) return;
     const year = isNaN(selectedYear) ? selectedIndicator.end : selectedYear;
     if (isNaN(selectedYear)) setSelectedYear(year);
-    if (selectedIndicator.id === currentIndicator?.id && year === currentYear) return;
+    if (selectedIndicator.id === currentIndicator?.id && year === currentYear)
+      return;
     if (renderDelay > 0) return;
 
     let url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${year}.csv`;
@@ -93,7 +96,7 @@ export default function MapPage() {
   });
 
   return (
-    <div className="flex flex-row h-full grow">
+    <div className="flex h-full grow flex-row">
       <div className="flex w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
         {indicatorCategories.map((category) => {
           return (
@@ -106,8 +109,12 @@ export default function MapPage() {
         })}
       </div>
       <div className="relative grow">
-        <MapView data={currentData} max={currentMax} />
-        <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end p-4 gap-4">
+        <MapView
+          data={currentData}
+          max={currentMax}
+          indicator={currentIndicator === null ? undefined : currentIndicator}
+        />
+        <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end gap-4 p-4">
           {selectedIndicator && (
             <>
               <MapKey maxValue={currentMax} indicator={selectedIndicator} />
