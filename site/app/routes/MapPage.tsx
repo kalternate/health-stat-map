@@ -93,8 +93,8 @@ export default function MapPage() {
   });
 
   return (
-    <div className="flex flex-row">
-      <div className="flex max-h-screen w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
+    <div className="flex flex-row h-full grow">
+      <div className="flex w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
         {indicatorCategories.map((category) => {
           return (
             <CategoryDropdown

@@ -62,7 +62,7 @@ export default function MapView(props: MapViewProps) {
   }
 
   return (
-    <div className="z-0 flex h-screen grow">
+    <div className="z-0 flex h-full grow">
       <MapContainer
         className="h-full min-h-full flex-1"
         center={[20, 0]}
