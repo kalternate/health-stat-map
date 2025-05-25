@@ -8,7 +8,7 @@ By Keagan Edwards, Danny Alder, Dylan Karter, & Mason Nicholas.
 
 2. Enter the following commands. Note that it make take a while to install all the npm packages the first time you run `npm i`.
 ```sh
-cd health-stat-map
+cd site
 npm i
 npm run dev
 ```
