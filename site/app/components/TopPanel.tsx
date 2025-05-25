@@ -21,6 +21,12 @@ export default function TopPanel() {
       >
         Support
       </NavLink>
+      <NavLink
+        className="text-xl text-zinc-600 underline hover:text-rose-700"
+        to="/faq"
+      >
+        FAQ
+      </NavLink>
     </div>
   );
 }
