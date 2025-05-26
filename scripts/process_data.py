@@ -60,56 +60,63 @@ def split_on_year(df, indicator, out_dir, sex_col=None):
             out_df = df[df['YEAR'] == year]
             out_df.to_csv(os.path.join(out_dir, indicator, f"{indicator}_{year}")+".csv", index=False)
 
-def main():
-    # use CLI arguments if entered correctly, otherwise prompts for input
-    if len(sys.argv) >= 3:
-        in_file = sys.argv[1]
-        out_dir = sys.argv[2]
-    else:
-        in_file = input("Enter path to indicator (including filename w/ extension): ")
-        out_dir = input("Enter path to directory to save files to: ")
-
-    # ensures existence of given directories, throws error if not and specifies which one is the issue
-    if not (os.path.exists(in_file) and os.path.exists(out_dir)):
-        in_doesnt_exist = not os.path.exists(in_file)
-        out_doesnt_exist = not os.path.exists(out_dir)
-        
-        if in_doesnt_exist and out_doesnt_exist:
-            raise Exception(f"ERROR: Neither {in_file} or {out_dir} are valid paths")
-        elif in_doesnt_exist:
-            raise Exception(f"ERROR: {in_file} is not a valid path")
+def split(cli = False, df = None, indicator_name=None):
+    
+    if cli:
+        # use CLI arguments if entered correctly, otherwise prompts for input
+        if len(sys.argv) >= 3:
+            in_file = sys.argv[1]
+            out_dir = sys.argv[2]
         else:
-            raise Exception(f"ERROR: {out_dir} is not a valid path")
+            in_file = input("Enter path to indicator (including filename w/ extension): ")
+            out_dir = input("Enter path to directory to save files to: ")
 
-    # checks if a json file exists containing the descriptions of the indicators -- CLI or user input
-    if len(sys.argv) == 4:
-        key_path = sys.argv[3]
+        # ensures existence of given directories, throws error if not and specifies which one is the issue
+        if not (os.path.exists(in_file) and os.path.exists(out_dir)):
+            in_doesnt_exist = not os.path.exists(in_file)
+            out_doesnt_exist = not os.path.exists(out_dir)
+            
+            if in_doesnt_exist and out_doesnt_exist:
+                raise Exception(f"ERROR: Neither {in_file} or {out_dir} are valid paths")
+            elif in_doesnt_exist:
+                raise Exception(f"ERROR: {in_file} is not a valid path")
+            else:
+                raise Exception(f"ERROR: {out_dir} is not a valid path")
+
+        # checks if a json file exists containing the descriptions of the indicators -- CLI or user input
+        if len(sys.argv) == 4:
+            key_path = sys.argv[3]
+        else:
+            key_path = input("(OPTIONAL) Enter path to indicator key .json (leave empty if not available): ")
+
+        # if given path to json file doesn't exist, empties out the invalid input to avoid future error
+        if not os.path.exists(key_path):
+            print("WARNING: Entered path to indicator key does not exist -- cannot display indicator description")
+            key_path = ""
+
+        # extracts the filename and name of the indicator
+        filename = os.path.basename(in_file)
+        indicator_name = os.path.splitext(filename)[0]
+
+        # loads in the indicator key if it exists
+        if key_path != "":
+            with open(key_path, 'r') as f:
+                indicator_lookup = json.load(f)
+
+        # displays the name of the indicator being processed and its description if valid key given
+        print(f"Processing files for {indicator_name}", end="")
+        if key_path != "":
+            print(':')
+            print(indicator_lookup[indicator_name])
+        else:
+            print()
+
+        df = pd.read_parquet(in_file)
     else:
-        key_path = input("(OPTIONAL) Enter path to indicator key .json (leave empty if not available): ")
-
-    # if given path to json file doesn't exist, empties out the invalid input to avoid future error
-    if not os.path.exists(key_path):
-        print("WARNING: Entered path to indicator key does not exist -- cannot display indicator description")
-        key_path = ""
-
-    # extracts the filename and name of the indicator
-    filename = os.path.basename(in_file)
-    indicator_name = os.path.splitext(filename)[0]
-
-    # loads in the indicator key if it exists
-    if key_path != "":
-        with open(key_path, 'r') as f:
-            indicator_lookup = json.load(f)
-
-    # displays the name of the indicator being processed and its description if valid key given
-    print(f"Processing files for {indicator_name}", end="")
-    if key_path != "":
-        print(':')
-        print(indicator_lookup[indicator_name])
-    else:
-        print()
-
-    df = pd.read_parquet(in_file)
+        out_dir = "data"
+        
+    if not cli and df is None:
+        return
 
     # columns we'll never need by default
     drop_columns=[
@@ -154,4 +161,4 @@ def main():
         split_on_year(df, indicator_name, out_dir)
     
 if __name__ == "__main__":
-    main()
+    split(cli=True)
