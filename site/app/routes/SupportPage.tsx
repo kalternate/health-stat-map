@@ -92,6 +92,164 @@ export default function SupportPage() {
         A private foundation with a global focus on improving health and
         education, especially in low- and middle-income countries.
       </NgoCard>
+
+      <NgoCard
+        to="https://www.doctorswithoutborders.org/"
+        imgSrc="images/DoctorsWithoutBorders_Logo.png"
+        title="Doctors Without Borders"
+      >
+        This international medical humanitarian organization provides assistance 
+        in countries affected by conflicts and epidemics, including those related 
+        to AIDS, malaria, and cholera.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.unicef.org/"
+        imgSrc="images/UNICEF_Logo.jpg"
+        title="UNICEF"
+      >
+        A United Nations agency whose work spans over 190 countries and territories. 
+        They are dedicated to protecting children's rights and well-being globally. 
+        As a partner in the Global Task Force on Cholera Control, they work to 
+        prevent and treat cholera through various means, including providing access 
+        to clean water and sanitation, delivering crucial medical supplies, and 
+        advocating for increased resources for cholera control.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.villagereach.org/"
+        imgSrc="images/VillageReach_Logo.png"
+        title="VillageReach"
+      >
+        Improves healthcare access and strengthens health systems in 
+        remote and underserved communities.
+      </NgoCard>
+
+
+      <h2 className="my-2 text-2xl">
+        Reputable NGOs Working on Combating Malaria Globally
+        <span className="font-bold"> Global Health Issues</span>
+      </h2>
+
+
+      <NgoCard
+        to="https://www.malarianomore.org/"
+        imgSrc="images/MalariaNoMore_Logo.png"
+        title="Malaria No More"
+      >
+        Malaria No More envisions a world where no one dies from a mosquito bite. 
+        This organization is reshaping the global malaria fight through strategic 
+        partnerships and a multidisciplinary approach. Their influence spans across 
+        advocacy, policy, communications, technical programs, and finance to drive 
+        meaningful change.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.againstmalaria.com/"
+        imgSrc="images/AgainstMalariaFoundation_Logo.png"
+        title="Against Malaria Foundation (AMF)"
+      >
+        AMF focuses on distributing insecticide-treated mosquito nets (ITNs) to 
+        protect people from malaria, particularly in low- and middle-income countries. 
+        They are known for being a cost-effective organization.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.psi.org/"
+        imgSrc="images/PSI_logo.png"
+        title="Population Services International (PSI)"
+      >
+        PSI provides malaria control support to national Ministries of Health in 
+        various countries. Their programs include distributing ITNs, 
+        providing malaria treatment, and implementing behavior change communications.
+      </NgoCard>
+
+
+      <h2 className="my-2 text-2xl">
+        Reputable NGO Working on Combating Tuberculosis (TB) Globally
+        <span className="font-bold"> Global Health Issues</span>
+      </h2>
+
+
+     <NgoCard
+        to="https://www.tballiance.org/"
+        imgSrc="images/TBAlliance_Logo.png"
+        title="TB Alliance"
+      >
+        A non-profit organization dedicated to the discovery, development, 
+        and delivery of better, faster, and affordable TB drugs. 
+        They work globally to improve treatment outcomes for people with TB.
+      </NgoCard>
+
+
+      <h2 className="my-2 text-2xl">
+        Reputable NGOs Working on Combating HIV/AIDS Globally
+        <span className="font-bold"> Global Health Issues</span>
+      </h2>
+
+
+      <NgoCard
+        to="https://www.unaids.org/en"
+        imgSrc="images/UNAIDS_Logo.jpg"
+        title="UNAIDS (Joint United Nations Program on HIV/AIDS)"
+      >
+        A UN global program that unites the efforts of 11 UN agencies. 
+        Through advocacy, research, and technical assistance their mission 
+        is to end the AIDS epidemic as a global public health threat by 2030.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.eltonjohnaidsfoundation.org/"
+        imgSrc="images/EltonJohn_Logo.jpg"
+        title="Elton John AIDS Foundation"
+      >
+        This foundation works to reduce the incidence of HIV/AIDS by focusing 
+        on prevention, ending stigma and discrimination, and providing 
+        direct treatment, care, and support services.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.aidshealth.org/"
+        imgSrc="images/AHF_Logo.png"
+        title="AIDS Healthcare Foundation (AHF)"
+      >
+        AHF is a large global organization that provides medicine and healthcare to 
+        people living with HIV/AIDS. They also offer prevention, testing, and advocacy services.
+      </NgoCard>
+
+
+      <h2 className="my-2 text-2xl">
+        Reputable NGOs Working on Combating Cholera Globally
+        <span className="font-bold"> Global Health Issues</span>
+      </h2>
+
+      <NgoCard
+        to="https://internationalmedicalcorps.org/"
+        imgSrc="images/InternationalMedicalCore_Logo.png"
+        title="International Medical Corps"
+      >
+        This organization rehabilitates water wells and provides education about 
+        safe water practices, focusing on a multi-pronged approach to address cholera.
+      </NgoCard>
+
+      <NgoCard
+        to="https://www.wateraid.org/us/"
+        imgSrc="images/WaterAid_Logo.png"
+        title="WaterAid"
+      >
+        WaterAid prioritizes clean water and sanitation infrastructure to prevent 
+        cholera outbreaks and improve overall water security.
+      </NgoCard>
+     
+      <NgoCard
+        to="https://alima.ngo/en/"
+        imgSrc="images/ALIMA_Logo.jpg"
+        title="ALIMA (The Alliance for International Medical Action)"
+      >
+        ALIMA rapidly responds to cholera outbreaks by setting up treatment centers, 
+        providing oral rehydration stations, and implementing awareness campaigns.
+      </NgoCard>
+
     </Article>
   );
 }
