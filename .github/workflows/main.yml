@@ -15,9 +15,9 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd bitscalc/site
+            cd health-stat-map/site
             git pull
-            npm i
+            npm ci
             npm run build
             rm -rf /var/www/healthstatmap
             cp -r build/client /var/www/healthstatmap            
