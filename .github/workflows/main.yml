@@ -15,7 +15,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd bitscalc
+            cd bitscalc/site
             git pull
             npm ci
             npm run build
