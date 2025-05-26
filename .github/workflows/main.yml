@@ -17,7 +17,7 @@ jobs:
           script: |
             cd bitscalc/site
             git pull
-            npm ci
+            npm i
             npm run build
             rm -rf /var/www/healthstatmap
             cp -r build/client /var/www/healthstatmap            
