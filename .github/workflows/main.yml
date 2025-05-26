@@ -1,23 +1,23 @@
-name: Build and Deploy
 on:
-  workflow_dispatch:
-permissions:
-  contents: write
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-
-      - name: install
-        run: |
-          cd health-stat-map
-          npm ci
-          npm run build
-
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - uses: appleboy/ssh-action@v1.2.2
         with:
-          folder: health-stat-map/build/client
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd health-stat-map/site
+            git pull
+            npm ci
+            npm run build
+            rm -rf /var/www/healthstatmap
+            cp -r build/client /var/www/healthstatmap            
