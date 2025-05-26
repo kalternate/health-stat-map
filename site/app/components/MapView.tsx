@@ -8,6 +8,7 @@ import {
   TileLayer,
 } from "react-leaflet";
 import type { Indicator } from "~/routes/MapPage";
+import { latLng, latLngBounds } from "leaflet";
 
 interface MapViewProps {
   data: Map<string, number>;
@@ -87,6 +88,8 @@ export default function MapView(props: MapViewProps) {
         className="h-full min-h-full flex-1"
         center={[20, 0]}
         zoom={2.5}
+        maxBounds={latLngBounds(latLng(-360, -360), latLng(360, 360))}
+        minZoom={2}
         scrollWheelZoom={true}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
