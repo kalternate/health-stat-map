@@ -97,6 +97,7 @@ export default function SupportPage() {
         to="https://www.doctorswithoutborders.org/"
         imgSrc="images/DoctorsWithoutBorders_Logo.png"
         title="Doctors Without Borders"
+        reverse
       >
         This international medical humanitarian organization provides assistance 
         in countries affected by conflicts and epidemics, including those related 
@@ -120,6 +121,7 @@ export default function SupportPage() {
         to="https://www.villagereach.org/"
         imgSrc="images/VillageReach_Logo.png"
         title="VillageReach"
+        reverse
       >
         Improves healthcare access and strengthens health systems in 
         remote and underserved communities.
@@ -148,6 +150,7 @@ export default function SupportPage() {
         to="https://www.againstmalaria.com/"
         imgSrc="images/AgainstMalariaFoundation_Logo.png"
         title="Against Malaria Foundation (AMF)"
+        reverse
       >
         AMF focuses on distributing insecticide-treated mosquito nets (ITNs) to 
         protect people from malaria, particularly in low- and middle-income countries. 
@@ -202,6 +205,7 @@ export default function SupportPage() {
         to="https://www.eltonjohnaidsfoundation.org/"
         imgSrc="images/EltonJohn_Logo.jpg"
         title="Elton John AIDS Foundation"
+        reverse
       >
         This foundation works to reduce the incidence of HIV/AIDS by focusing 
         on prevention, ending stigma and discrimination, and providing 
@@ -236,6 +240,7 @@ export default function SupportPage() {
         to="https://www.wateraid.org/us/"
         imgSrc="images/WaterAid_Logo.png"
         title="WaterAid"
+        reverse
       >
         WaterAid prioritizes clean water and sanitation infrastructure to prevent 
         cholera outbreaks and improve overall water security.
