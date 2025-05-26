@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import type { Indicator } from "~/routes/MapPage";
 import { mapColors, numberFormatter } from "~/utils";
 
@@ -37,6 +38,8 @@ export default function MapKey(props: MapKeyProps) {
           );
         })}
       </div>
+
+      <div className="text-sm text-zinc-600">Source: <NavLink className="underline" to="https://www.who.int/data/gho">WHO GHO</NavLink></div>
     </div>
   );
 }
