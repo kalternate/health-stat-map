@@ -1,10 +1,11 @@
 import type { PropsWithChildren } from "react";
 
 export default function Article(props: PropsWithChildren<{}>) {
-    return <div className="bg-zinc-300 flex items-center flex-col grow">
-        <div className="bg-zinc-100 w-4xl grow p-4 border-x-1 flex flex-col gap-6">
-
+  return (
+    <div className="flex grow flex-col items-center bg-zinc-300">
+      <div className="flex w-4xl grow flex-col gap-6 border-x-1 bg-zinc-100 p-4">
         {props.children}
-        </div>
-    </div>;
+      </div>
+    </div>
+  );
 }

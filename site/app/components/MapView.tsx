@@ -98,11 +98,13 @@ export default function MapView(props: MapViewProps) {
               positions={polygon.coordinates}
             >
               <Popup>
-                <div className="font-bold text-base">{polygon.flagEmoji} {polygon.countryName}</div>
+                <div className="text-base font-bold">
+                  {polygon.flagEmoji} {polygon.countryName}
+                </div>
                 {isNaN(polygon.value) ? (
-                  <div className="font w-50 text-justify text-xsm">No data</div>
+                  <div className="font text-xsm w-50 text-justify">No data</div>
                 ) : (
-                  <div className="font w-60 text-justify  text-xs">
+                  <div className="font w-60 text-justify text-xs">
                     <span className="font-bold underline">
                       {numberFormatter.format(polygon.value)}
                     </span>{" "}
