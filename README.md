@@ -2,6 +2,8 @@
 An online, interactive map supporting global health.
 By Keagan Edwards, Danny Alder, Dylan Karter, & Mason Nicholas.
 
+You should checkout [the live version of the site!](https://healthstatmap.kalternate.com/)
+
 ## Getting Started
 
 1. First, make sure you have Node.js and npm installed. It should already be installed on the lab machines.
