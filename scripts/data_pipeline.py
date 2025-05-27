@@ -33,8 +33,6 @@ def get_indicator_df(id):
 
 def main():
     indicator_ids = get_indicator_list('id').to_list()
-    
-    breakpoint()
 
     for indicator in tqdm(indicator_ids, desc="Indicators loaded"):
         df = get_indicator_df(indicator)
