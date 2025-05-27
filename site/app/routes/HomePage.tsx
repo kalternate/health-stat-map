@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles.css";
+import "./homepage.css";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="home">
       <header>
         <h1>HealthStatMap</h1>
         <p>Visualizing Disease Impact Across the Globe</p>
       </header>
 
-      <main>
+      <div className=".home-main mx-10 my-5">
         <section className="intro">
           <h2>About the Map</h2>
           <p>
@@ -32,7 +32,7 @@ export default function HomePage() {
               <h3>Support NGOs and Other Non-profits</h3>
               <p>Discover organizations working to improve global health and learn how you can get involved.</p>
             </Link>
-            <Link to="/faqs" className="card">
+            <Link to="/faq" className="card">
               <h3>FAQs</h3>
               <p>Find answers to common questions about how the data is collected, interpreted, and used.</p>
             </Link>
@@ -83,7 +83,7 @@ export default function HomePage() {
             The data is updated regularly to ensure accuracy and relevance, providing a comprehensive overview of global health challenges.
           </p>
         </section>
-      </main>
+      </div>
 
       <footer>
         <p>&copy; This map was developed by Danny Alder, Dylan Karter, Keagan Edwards, and Mason Nicholas in 2025.</p>
