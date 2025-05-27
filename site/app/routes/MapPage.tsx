@@ -65,9 +65,9 @@ export default function MapPage() {
       return;
     if (renderDelay > 0) return;
 
-    let url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${year}.csv`;
+    let url = `/data/${selectedIndicator.id}/${selectedIndicator.id}_${year}.csv`;
     if (selectedIndicator.gendered) {
-      url = `/data/${selectedIndicator.category}/${selectedIndicator.id}_${year}_both.csv`;
+      url = `/data/${selectedIndicator.id}/${selectedIndicator.id}_${year}_both.csv`;
     }
 
     const newData = new Map<string, number>();

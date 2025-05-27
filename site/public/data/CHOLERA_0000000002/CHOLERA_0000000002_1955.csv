@@ -1,0 +1,5 @@
+Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
+1195825,COUNTRY,MMR,SEAR,South-East Asia,1955,12,12.0
+5591222,COUNTRY,BRN,WPR,Western Pacific,1955,0,0.0
+7715370,COUNTRY,BGD,SEAR,South-East Asia,1955,9802,9802.0
+2570011,COUNTRY,IND,SEAR,South-East Asia,1955,7662,7662.0

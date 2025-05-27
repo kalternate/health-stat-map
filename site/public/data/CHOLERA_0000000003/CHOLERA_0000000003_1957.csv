@@ -1,0 +1,5 @@
+Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
+3963410,COUNTRY,KHM,WPR,Western Pacific,1957,16.67,
+5677217,COUNTRY,IND,SEAR,South-East Asia,1957,90.46,
+6351916,COUNTRY,BGD,SEAR,South-East Asia,1957,63.74,
+8201433,COUNTRY,MMR,SEAR,South-East Asia,1957,30,
