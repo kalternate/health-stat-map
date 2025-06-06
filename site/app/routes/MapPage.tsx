@@ -112,9 +112,11 @@ export default function MapPage() {
         })}
       </div>
       <div className="relative grow">
-          <MemoizedMapView
-
-          />
+        <MapView
+          data={currentData}
+          max={currentMax}
+          indicator={currentIndicator === null ? undefined : currentIndicator}
+        />
         <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end gap-4 p-4">
           {selectedIndicator && (
             <>
