@@ -9,6 +9,7 @@ import {
 } from "react-leaflet";
 import type { Indicator } from "~/routes/MapPage";
 import { latLng, latLngBounds } from "leaflet";
+import { Suspense, useMemo } from "react";
 
 interface MapViewProps {
   data: Map<string, number>;
@@ -92,25 +93,26 @@ export default function MapView(props: MapViewProps) {
         minZoom={2}
         scrollWheelZoom={true}
       >
-        <TileLayer 
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
+
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
 
         {polygons.map((polygon) => {
-          return (
-            <Polygon
-              pathOptions={polygon.options}
-              positions={polygon.coordinates}
-            >
+            return (
+                <Polygon
+                pathOptions={polygon.options}
+                positions={polygon.coordinates}
+                >
               <Popup>
                 <div className="text-base font-bold">
                   {polygon.flagEmoji} {polygon.countryName}
                 </div>
                 {isNaN(polygon.value) ? (
-                  <div className="font text-xsm w-50 text-justify">No data</div>
+                    <div className="font text-xsm w-50 text-justify">No data</div>
                 ) : (
-                  <div className="font w-60 text-justify text-xs">
+                    <div className="font w-60 text-justify text-xs">
                     <span className="font-bold underline">
                       {numberFormatter.format(polygon.value)}
                     </span>{" "}

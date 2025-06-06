@@ -1,10 +1,11 @@
 import CategoryDropdown from "~/components/CategoryDropdown";
-import MapView from "../components/MapView";
 import dataManifest from "../data/data_manifest.json";
-import { useEffect, useState } from "react";
+import { lazy, memo, startTransition, Suspense, useEffect, useState } from "react";
 import { parse } from "papaparse";
 import MapKey from "~/components/MapKey";
 import MapYearSelector from "~/components/MapYearSelector";
+import MapLoading from "~/components/MapLoading";
+import MapView from "~/components/MapView";
 
 export interface IndicatorCategory {
   id: string;
@@ -87,10 +88,12 @@ export default function MapPage() {
         }
       },
       complete: () => {
-        setCurrentData(newData);
-        setCurrentIndicator(selectedIndicator);
-        setCurrentMax(newMax);
-        setCurrentYear(year);
+        startTransition(() => {
+            setCurrentData(newData);
+            setCurrentIndicator(selectedIndicator);
+            setCurrentMax(newMax);
+            setCurrentYear(year);
+        });
       },
     });
   });
@@ -109,11 +112,9 @@ export default function MapPage() {
         })}
       </div>
       <div className="relative grow">
-        <MapView
-          data={currentData}
-          max={currentMax}
-          indicator={currentIndicator === null ? undefined : currentIndicator}
-        />
+          <MemoizedMapView
+
+          />
         <div className="pointer-events-none absolute inset-0 bottom-0 z-10000 flex flex-row items-end gap-4 p-4">
           {selectedIndicator && (
             <>

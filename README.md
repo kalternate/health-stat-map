@@ -1,4 +1,5 @@
 # Health Stat Map
+
 An online, interactive map supporting global health.
 By Keagan Edwards, Danny Alder, Dylan Karter, & Mason Nicholas.
 
@@ -9,6 +10,7 @@ You should checkout [the live version of the site!](https://healthstatmap.kalter
 1. First, make sure you have Node.js and npm installed. It should already be installed on the lab machines.
 
 2. Enter the following commands. Note that it make take a while to install all the npm packages the first time you run `npm i`.
+
 ```sh
 cd site
 npm i
@@ -16,6 +18,7 @@ npm run dev
 ```
 
 3. You should see something that looks like the following. Use your web browswer to navigate to the specified local HTTP address. You may be able to do this by control-clicking the address in the terminal. It may be different from the example below.
+
 ```
 > dev
 > react-router dev

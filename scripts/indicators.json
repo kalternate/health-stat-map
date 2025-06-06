@@ -3,27 +3,27 @@
     "MALARIA_EST_INCIDENCE": "Estimated malaria incidence (per 1000 population at risk)",
     "MALARIA_EST_MORTALITY": "Estimated malaria mortality rate (per 100 000 population)",
     "MALARIA_EST_CASES": "Estimated number of malaria cases",
-    "MALARIA_EST_DEATHS": "Estimated number of malaria deaths",
+    "MALARIA_EST_DEATHS": "Estimated number of malaria deaths"
   },
 
   "hiv": {
-    "SDGHIV": "New HIV infections (per 1000 uninfected population)", 
-    "WHS2_138": "Deaths due to HIV/AIDS (per 100 000 population)", 
+    "SDGHIV": "New HIV infections (per 1000 uninfected population)",
+    "WHS2_138": "Deaths due to HIV/AIDS (per 100 000 population)",
     "HIV_0000000001": "Estimated number of people (all ages) living with HIV",
     "HIV_0000000026": "Number of new HIV infections",
-    "HIV_0000000006": "Number of people dying from HIV-related causes",
+    "HIV_0000000006": "Number of people dying from HIV-related causes"
   },
 
   "tb": {
     "MDG_0000000020": "Incidence of tuberculosis (per 100 000 population per year)",
     "MDG_0000000017": "Deaths due to tuberculosis among HIV-negative people (per 100 000 population)",
     "TB_e_inc_num": "Number of incident tuberculosis cases",
-    "TB_e_mort_exc_tbhiv_num": "Number of deaths due to tuberculosis, excluding HIV",
+    "TB_e_mort_exc_tbhiv_num": "Number of deaths due to tuberculosis, excluding HIV"
   },
 
   "cholera": {
-    "CHOLERA_0000000002": "Number of reported deaths from cholera", 
-    "CHOLERA_0000000001": "Number of reported cases of cholera", 
+    "CHOLERA_0000000002": "Number of reported deaths from cholera",
+    "CHOLERA_0000000001": "Number of reported cases of cholera",
     "CHOLERA_0000000003": "Cholera case fatality rate"
   }
 }
