@@ -18,6 +18,10 @@ body {
   }
 }
 
+.leaflet-container {
+  @apply bg-sky-200
+}
+
 .leaflet-popup-content-wrapper {
   @apply rounded-md;
   @apply shadow-none;

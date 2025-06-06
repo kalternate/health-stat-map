@@ -29,7 +29,7 @@ export default function MapView(props: MapViewProps) {
   const countriesShapeData: any = countriesShapeDataJson;
   const polygons: any[] = [];
 
-  const noDataColor = "#27272a";
+  const noDataColor = "#525252";
 
   function addPolygon(
     coordinates: any,
@@ -59,7 +59,7 @@ export default function MapView(props: MapViewProps) {
         color: "#18181b",
         weight: 1.5,
         fillColor: color,
-        fillOpacity: 0.8,
+        fillOpacity: 1,
       },
     };
 
@@ -93,10 +93,6 @@ export default function MapView(props: MapViewProps) {
         minZoom={2}
         scrollWheelZoom={true}
       >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
 
         {polygons.map((polygon) => {
           return (
