@@ -67,7 +67,7 @@ export default function MapPageContent() {
 
     let url = `/data/${selectedIndicator.id}/${selectedIndicator.id}_${year}.csv`;
     if (selectedIndicator.gendered) {
-      url = `/data/${selectedIndicator.id}/${selectedIndicator.id}_${year}_both.csv`;
+      url = `/data/${selectedIndicator.id}/both/${selectedIndicator.id}_${year}_both.csv`;
     }
 
     const newData = new Map<string, number>();
