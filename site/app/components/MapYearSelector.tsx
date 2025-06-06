@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react";
-import type { Indicator } from "~/routes/MapPage";
+import type { Indicator } from "~/components/MapPageContent";
 
 interface MapYearSelectorProps {
   selectedYear: number;
