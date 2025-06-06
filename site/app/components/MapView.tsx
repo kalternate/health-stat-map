@@ -89,7 +89,7 @@ export default function MapView(props: MapViewProps) {
         className="h-full min-h-full flex-1"
         center={[20, 0]}
         zoom={2.5}
-        maxBounds={latLngBounds(latLng(-360, -360), latLng(360, 360))}
+        maxBounds={latLngBounds(latLng(-360, -225), latLng(360, 225))}
         minZoom={2}
         scrollWheelZoom={true}
       >
