@@ -87,28 +87,28 @@ export default function MapPageContent() {
         }
       },
       complete: () => {
-        startTransition(() => {
           setCurrentData(newData);
           setCurrentIndicator(selectedIndicator);
           setCurrentMax(newMax);
           setCurrentYear(year);
-        });
       },
     });
   });
 
   return (
     <div className="flex h-full grow flex-row">
-      <div className="flex w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
+      <div className="flex w-sm h-full   relative">
+        <div className="overflow-y-auto absolute h-full w-sm flex-col border-r-1 border-zinc-600">
         {indicatorCategories.map((category) => {
-          return (
-            <CategoryDropdown
-              category={category}
-              selectedIndicator={selectedIndicator}
-              setSelectedIndicator={setSelectedIndicator}
-            />
-          );
+            return (
+                <CategoryDropdown
+                category={category}
+                selectedIndicator={selectedIndicator}
+                setSelectedIndicator={setSelectedIndicator}
+                />
+            );
         })}
+        </div>
       </div>
       <div className="relative grow">
         <MapView
