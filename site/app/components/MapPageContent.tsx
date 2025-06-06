@@ -47,6 +47,11 @@ export default function MapPageContent() {
     setSelectedYear(year);
   };
 
+    const selectIndicator = (indicator: Indicator) => {
+    setSelectedIndicator(indicator);
+    setSelectedYear(Math.max(Math.min(selectedYear, indicator.end), indicator.start));
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setRenderDelay((prevDelay) =>
@@ -97,14 +102,14 @@ export default function MapPageContent() {
 
   return (
     <div className="flex h-full grow flex-row">
-      <div className="flex w-sm h-full   relative">
+      <div className="flex w-sm h-full relative">
         <div className="overflow-y-auto absolute h-full w-sm flex-col border-r-1 border-zinc-600">
         {indicatorCategories.map((category) => {
             return (
                 <CategoryDropdown
                 category={category}
                 selectedIndicator={selectedIndicator}
-                setSelectedIndicator={setSelectedIndicator}
+                setSelectedIndicator={selectIndicator}
                 />
             );
         })}
