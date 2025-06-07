@@ -57,7 +57,7 @@
   },
   {
     "question": "How do I view the impact a selected disease has had over time?",
-    "answer": "Use the time slider to view how the impact of the selected disease has changed over time. The time slider can be found in the lower left of the map next to the key. Click and drag the blue circle to your preferred year and release. You will see the map change to the statistics of that newly selected year."
+    "answer": "Use the time slider to view how the impact of the selected disease has changed over time. The time slider can be found in the lower left of the map next to the key. Click and drag the circle to your preferred year and release. You will see the map change to the statistics of that newly selected year."
   },
   {
     "question": "How do I zoom in and out on the map?",
