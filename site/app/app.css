@@ -19,7 +19,7 @@ body {
 }
 
 .leaflet-container {
-  @apply bg-sky-200
+  @apply bg-sky-200;
 }
 
 .leaflet-popup-content-wrapper {

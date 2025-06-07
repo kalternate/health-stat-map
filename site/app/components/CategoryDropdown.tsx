@@ -1,5 +1,8 @@
 import { useState, type PropsWithChildren } from "react";
-import type { Indicator, IndicatorCategory } from "../components/MapPageContent";
+import type {
+  Indicator,
+  IndicatorCategory,
+} from "../components/MapPageContent";
 import IndicatorSelector from "./IndicatorSelector";
 
 interface CategoryDropdownProps {

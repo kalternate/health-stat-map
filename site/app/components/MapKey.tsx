@@ -29,7 +29,10 @@ export default function MapKey(props: MapKeyProps) {
                 style={{ backgroundColor: color }}
               />
 
-              <div className="text-right"> {numberFormatter.format(spanLength * colorIndex)}</div>
+              <div className="text-right">
+                {" "}
+                {numberFormatter.format(spanLength * colorIndex)}
+              </div>
               <div> &ndash; </div>
               <div className="text-left">
                 {numberFormatter.format(spanLength * (colorIndex + 1))}

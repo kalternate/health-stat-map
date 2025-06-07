@@ -47,9 +47,11 @@ export default function MapPageContent() {
     setSelectedYear(year);
   };
 
-    const selectIndicator = (indicator: Indicator) => {
+  const selectIndicator = (indicator: Indicator) => {
     setSelectedIndicator(indicator);
-    setSelectedYear(Math.max(Math.min(selectedYear, indicator.end), indicator.start));
+    setSelectedYear(
+      Math.max(Math.min(selectedYear, indicator.end), indicator.start),
+    );
   };
 
   useEffect(() => {
@@ -92,27 +94,27 @@ export default function MapPageContent() {
         }
       },
       complete: () => {
-          setCurrentData(newData);
-          setCurrentIndicator(selectedIndicator);
-          setCurrentMax(newMax);
-          setCurrentYear(year);
+        setCurrentData(newData);
+        setCurrentIndicator(selectedIndicator);
+        setCurrentMax(newMax);
+        setCurrentYear(year);
       },
     });
   });
 
   return (
     <div className="flex h-full grow flex-row">
-      <div className="flex w-sm h-full relative">
-        <div className="overflow-y-auto absolute h-full w-sm flex-col border-r-1 border-zinc-600">
-        {indicatorCategories.map((category) => {
+      <div className="relative flex h-full w-sm">
+        <div className="absolute h-full w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
+          {indicatorCategories.map((category) => {
             return (
-                <CategoryDropdown
+              <CategoryDropdown
                 category={category}
                 selectedIndicator={selectedIndicator}
                 setSelectedIndicator={selectIndicator}
-                />
+              />
             );
-        })}
+          })}
         </div>
       </div>
       <div className="relative grow">

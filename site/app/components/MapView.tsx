@@ -93,7 +93,6 @@ export default function MapView(props: MapViewProps) {
         minZoom={2}
         scrollWheelZoom={true}
       >
-
         {polygons.map((polygon) => {
           return (
             <Polygon
