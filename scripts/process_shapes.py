@@ -76,7 +76,7 @@ def compress_shape(shape):
 
 
 def compress_shapes(shapes):
-    return list(filter(lambda shape : len(shape) > 2, map(ramer_douglas_peucker, shapes)))
+    return list(filter(lambda shape : len(shape) > 2, map(compress_shape, shapes)))
 
 
 def main():
