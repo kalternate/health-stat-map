@@ -22,7 +22,7 @@ def save_manifest(manifest):
     PATH = "site/app/data/data_manifest.json"
     
     with open(PATH, 'w') as f:
-        json.dump(manifest, f, indent=4)
+        json.dump(manifest, f, indent=2)
 
 def get_indicator_list(col = None):
     '''
