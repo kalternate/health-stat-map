@@ -1,4 +1,4 @@
-import type { Indicator, IndicatorCategory } from "~/routes/MapPage";
+import type { Indicator, IndicatorCategory } from "~/components/MapPageContent";
 import CategoryDropdown from "./CategoryDropdown";
 
 interface IndicatorListProps {
@@ -9,7 +9,8 @@ interface IndicatorListProps {
 }
 
 export default function IndicatorList(props: IndicatorListProps) {
-      return <div className="flex w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
+      return       <div className="relative flex h-full w-sm">
+        <div className="absolute h-full w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
         {props.indicatorCategories.map((category) => {
           return (
             <CategoryDropdown
@@ -19,5 +20,6 @@ export default function IndicatorList(props: IndicatorListProps) {
             />
           );
         })}
+      </div>
       </div>
 }

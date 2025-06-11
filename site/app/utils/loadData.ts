@@ -1,13 +1,12 @@
-import type { Indicator } from "~/routes/MapPage";
+import type { Indicator } from "~/components/MapPageContent";
 import { parse } from "papaparse";
 
 
 type OnLoadHandler = (data:  Map<string, number>, max: number) => void;
-
 export function loadData(indicator: Indicator, year: number, onLoad: OnLoadHandler) {
     let url = `/data/${indicator.id}/${indicator.id}_${year}.csv`;
     if (indicator.gendered) {
-      url = `/data/${indicator.id}/${indicator.id}_${year}_both.csv`;
+      url = `/data/${indicator.id}/both/${indicator.id}_${year}_both.csv`;
     }
 
     const dataMap = new Map<string, number>();
