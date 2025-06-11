@@ -1,7 +1,7 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
 41811,COUNTRY,JPN,WPR,Western Pacific,1964,50,
-1886275,COUNTRY,BGD,SEAR,South-East Asia,1964,72.58,
 1382986,COUNTRY,IND,SEAR,South-East Asia,1964,32.13,
+1886275,COUNTRY,BGD,SEAR,South-East Asia,1964,72.58,
 2117187,COUNTRY,SGP,WPR,Western Pacific,1964,12.5,
 7633885,COUNTRY,IDN,SEAR,South-East Asia,1964,21.17,
 8148061,COUNTRY,KHM,WPR,Western Pacific,1964,14.44,

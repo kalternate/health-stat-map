@@ -1,7 +1,7 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEAR,Value,NumericValue,Low,High
 33150,COUNTRY,LBR,AFR,Africa,SEX,Female,1998,2 [1.7 - 2.3],2.0,1.7,2.3
-100761,COUNTRY,SLB,WPR,Western Pacific,SEX,Female,1998,No data,,,
 70387,COUNTRY,COK,WPR,Western Pacific,SEX,Female,1998,No data,,,
+100761,COUNTRY,SLB,WPR,Western Pacific,SEX,Female,1998,No data,,,
 200766,COUNTRY,ARG,AMR,Americas,SEX,Female,1998,0.1 [<0.1 - 0.11],0.1,0.1,0.11
 216382,COUNTRY,LAO,WPR,Western Pacific,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 251539,COUNTRY,KEN,AFR,Africa,SEX,Female,1998,6.5 [3.5 - 11],6.5,3.5,11.0
@@ -9,8 +9,8 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 340566,COUNTRY,MEX,AMR,Americas,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 357092,COUNTRY,VUT,WPR,Western Pacific,SEX,Female,1998,No data,,,
 429926,COUNTRY,NGA,AFR,Africa,SEX,Female,1998,1.8 [1.6 - 2.1],1.8,1.6,2.1
-456740,COUNTRY,ALB,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 440019,COUNTRY,BGR,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+456740,COUNTRY,ALB,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 495849,COUNTRY,VNM,WPR,Western Pacific,SEX,Female,1998,0.12 [<0.1 - 0.13],0.12,0.1,0.13
 520366,REGION,EUR,,,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 561460,COUNTRY,BRB,AMR,Americas,SEX,Female,1998,0.5 [0.41 - 0.59],0.5,0.41,0.59
@@ -18,19 +18,19 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 635297,COUNTRY,IND,SEAR,South-East Asia,SEX,Female,1998,No data,,,
 737653,COUNTRY,TJK,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 899524,COUNTRY,FIN,EUR,Europe,SEX,Female,1998,No data,,,
-947498,COUNTRY,MLI,AFR,Africa,SEX,Female,1998,1.3 [1 - 1.6],1.3,1.0,1.6
-956951,COUNTRY,TGO,AFR,Africa,SEX,Female,1998,3.7 [2.9 - 4.6],3.7,2.9,4.6
 944825,REGION,WPR,,,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
+947498,COUNTRY,MLI,AFR,Africa,SEX,Female,1998,1.3 [1 - 1.6],1.3,1.0,1.6
 954421,COUNTRY,SRB,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+956951,COUNTRY,TGO,AFR,Africa,SEX,Female,1998,3.7 [2.9 - 4.6],3.7,2.9,4.6
 981821,COUNTRY,TCD,AFR,Africa,SEX,Female,1998,1.8 [1.4 - 2.4],1.8,1.4,2.4
 1076436,COUNTRY,PRY,AMR,Americas,SEX,Female,1998,0.11 [<0.1 - 0.15],0.11,0.1,0.15
 1096954,COUNTRY,USA,AMR,Americas,SEX,Female,1998,No data,,,
 1153838,COUNTRY,GNB,AFR,Africa,SEX,Female,1998,4.6 [3.9 - 5.5],4.6,3.9,5.5
 1214185,COUNTRY,NER,AFR,Africa,SEX,Female,1998,0.63 [0.56 - 0.73],0.63,0.56,0.73
 1218404,COUNTRY,BRA,AMR,Americas,SEX,Female,1998,0.21 [0.19 - 0.22],0.21,0.19,0.22
-1276514,COUNTRY,SMR,EUR,Europe,SEX,Female,1998,No data,,,
 1254190,COUNTRY,GNQ,AFR,Africa,SEX,Female,1998,No data,,,
 1275239,COUNTRY,ZWE,AFR,Africa,SEX,Female,1998,16 [11 - 23],16.0,11.0,23.0
+1276514,COUNTRY,SMR,EUR,Europe,SEX,Female,1998,No data,,,
 1281192,COUNTRY,SYC,AFR,Africa,SEX,Female,1998,No data,,,
 1320791,COUNTRY,KNA,AMR,Americas,SEX,Female,1998,No data,,,
 1342117,COUNTRY,CUB,AMR,Americas,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
@@ -49,9 +49,9 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 1838883,COUNTRY,TUR,EUR,Europe,SEX,Female,1998,No data,,,
 1853547,COUNTRY,BHR,EMR,Eastern Mediterranean,SEX,Female,1998,No data,,,
 1921793,COUNTRY,QAT,EMR,Eastern Mediterranean,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-2037795,COUNTRY,PAN,AMR,Americas,SEX,Female,1998,0.22 [0.2 - 0.25],0.22,0.2,0.25
 2032487,COUNTRY,EST,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 2036001,COUNTRY,JPN,WPR,Western Pacific,SEX,Female,1998,No data,,,
+2037795,COUNTRY,PAN,AMR,Americas,SEX,Female,1998,0.22 [0.2 - 0.25],0.22,0.2,0.25
 2056600,COUNTRY,GMB,AFR,Africa,SEX,Female,1998,1.8 [1.3 - 2.5],1.8,1.3,2.5
 2122526,COUNTRY,NOR,EUR,Europe,SEX,Female,1998,No data,,,
 2126619,COUNTRY,SVN,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
@@ -61,16 +61,16 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 2248031,COUNTRY,URY,AMR,Americas,SEX,Female,1998,0.1 [<0.1 - 0.17],0.1,0.1,0.17
 2311037,COUNTRY,MYS,WPR,Western Pacific,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 2444111,COUNTRY,CIV,AFR,Africa,SEX,Female,1998,5.1 [4.4 - 6],5.1,4.4,6.0
-2503213,COUNTRY,BDI,AFR,Africa,SEX,Female,1998,1.8 [1.5 - 2.2],1.8,1.5,2.2
 2496632,COUNTRY,LUX,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
+2503213,COUNTRY,BDI,AFR,Africa,SEX,Female,1998,1.8 [1.5 - 2.2],1.8,1.5,2.2
 2541099,COUNTRY,BEL,EUR,Europe,SEX,Female,1998,No data,,,
 2578640,COUNTRY,SWE,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
-2597635,COUNTRY,RUS,EUR,Europe,SEX,Female,1998,No data,,,
 2586771,COUNTRY,MNE,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+2597635,COUNTRY,RUS,EUR,Europe,SEX,Female,1998,No data,,,
 2776324,COUNTRY,ITA,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 2876815,COUNTRY,ECU,AMR,Americas,SEX,Female,1998,0.13 [<0.1 - 0.2],0.13,0.1,0.2
-3108039,COUNTRY,CHL,AMR,Americas,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 3104712,COUNTRY,MDA,EUR,Europe,SEX,Female,1998,0.22 [0.16 - 0.33],0.22,0.16,0.33
+3108039,COUNTRY,CHL,AMR,Americas,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 3108417,COUNTRY,MNG,WPR,Western Pacific,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 3204718,COUNTRY,PRK,SEAR,South-East Asia,SEX,Female,1998,No data,,,
 3228463,COUNTRY,GRC,EUR,Europe,SEX,Female,1998,<0.1 [<0.01 - <0.1],0.1,0.01,0.1
@@ -90,11 +90,11 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 3778328,COUNTRY,TZA,AFR,Africa,SEX,Female,1998,4.5 [4.1 - 5.1],4.5,4.1,5.1
 3794878,COUNTRY,KHM,WPR,Western Pacific,SEX,Female,1998,1.1 [0.9 - 1.2],1.1,0.9,1.2
 3874712,COUNTRY,NAM,AFR,Africa,SEX,Female,1998,16 [14 - 17],16.0,14.0,17.0
+3963496,COUNTRY,BOL,AMR,Americas,SEX,Female,1998,0.13 [<0.1 - 0.22],0.13,0.1,0.22
 3979638,COUNTRY,BHS,AMR,Americas,SEX,Female,1998,1 [0.88 - 1.2],1.0,0.88,1.2
 3980038,COUNTRY,SVK,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-3963496,COUNTRY,BOL,AMR,Americas,SEX,Female,1998,0.13 [<0.1 - 0.22],0.13,0.1,0.22
-3990345,COUNTRY,GIN,AFR,Africa,SEX,Female,1998,1.6 [1.3 - 1.9],1.6,1.3,1.9
 3985029,COUNTRY,NIC,AMR,Americas,SEX,Female,1998,0.14 [<0.1 - 0.18],0.14,0.1,0.18
+3990345,COUNTRY,GIN,AFR,Africa,SEX,Female,1998,1.6 [1.3 - 1.9],1.6,1.3,1.9
 3995123,COUNTRY,GHA,AFR,Africa,SEX,Female,1998,2.1 [1.8 - 2.4],2.1,1.8,2.4
 4032220,COUNTRY,FRA,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 4079657,COUNTRY,EGY,EMR,Eastern Mediterranean,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
@@ -104,9 +104,9 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 4344942,COUNTRY,MDV,SEAR,South-East Asia,SEX,Female,1998,No data,,,
 4369508,COUNTRY,SYR,EMR,Eastern Mediterranean,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 4370159,COUNTRY,VEN,AMR,Americas,SEX,Female,1998,0.14 [0.12 - 0.16],0.14,0.12,0.16
+4427175,COUNTRY,WSM,WPR,Western Pacific,SEX,Female,1998,No data,,,
 4429945,COUNTRY,GRD,AMR,Americas,SEX,Female,1998,No data,,,
 4434940,COUNTRY,KWT,EMR,Eastern Mediterranean,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-4427175,COUNTRY,WSM,WPR,Western Pacific,SEX,Female,1998,No data,,,
 4473494,COUNTRY,HND,AMR,Americas,SEX,Female,1998,0.59 [0.51 - 0.68],0.59,0.51,0.68
 4543468,COUNTRY,UZB,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 4623237,COUNTRY,TUV,WPR,Western Pacific,SEX,Female,1998,No data,,,
@@ -114,16 +114,16 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 4929230,COUNTRY,BGD,SEAR,South-East Asia,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 4969216,COUNTRY,AFG,EMR,Eastern Mediterranean,SEX,Female,1998,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
 4995067,COUNTRY,HUN,EUR,Europe,SEX,Female,1998,No data,,,
-5049275,COUNTRY,ESP,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5028767,COUNTRY,KOR,WPR,Western Pacific,SEX,Female,1998,No data,,,
+5049275,COUNTRY,ESP,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5065878,COUNTRY,PRT,EUR,Europe,SEX,Female,1998,0.13 [0.11 - 0.15],0.13,0.11,0.15
 5162005,COUNTRY,AUS,WPR,Western Pacific,SEX,Female,1998,<0.1 [<0.01 - <0.1],0.1,0.01,0.1
 5190209,COUNTRY,SOM,EMR,Eastern Mediterranean,SEX,Female,1998,0.29 [0.24 - 0.35],0.29,0.24,0.35
 5284996,COUNTRY,BLR,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5314507,COUNTRY,IRN,EMR,Eastern Mediterranean,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
+5411852,COUNTRY,MDG,AFR,Africa,SEX,Female,1998,No data,,,
 5428046,COUNTRY,MAR,EMR,Eastern Mediterranean,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5446356,COUNTRY,CHE,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
-5411852,COUNTRY,MDG,AFR,Africa,SEX,Female,1998,No data,,,
 5465115,COUNTRY,DMA,AMR,Americas,SEX,Female,1998,No data,,,
 5518104,COUNTRY,PLW,WPR,Western Pacific,SEX,Female,1998,No data,,,
 5565112,COUNTRY,TLS,SEAR,South-East Asia,SEX,Female,1998,<0.1 [<0.1 - 0.13],0.1,0.1,0.13
@@ -134,8 +134,8 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 5989775,COUNTRY,LTU,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5992681,COUNTRY,SWZ,AFR,Africa,SEX,Female,1998,26 [24 - 28],26.0,24.0,28.0
 6094385,COUNTRY,ARM,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-6129727,COUNTRY,LKA,SEAR,South-East Asia,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6101942,COUNTRY,COD,AFR,Africa,SEX,Female,1998,1.3 [1 - 1.6],1.3,1.0,1.6
+6129727,COUNTRY,LKA,SEAR,South-East Asia,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6159991,COUNTRY,CPV,AFR,Africa,SEX,Female,1998,0.44 [0.35 - 0.55],0.44,0.35,0.55
 6244680,REGION,EMR,,,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6373965,COUNTRY,STP,AFR,Africa,SEX,Female,1998,1.2 [0.88 - 1.6],1.2,0.88,1.6
@@ -143,8 +143,8 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 6477618,COUNTRY,TON,WPR,Western Pacific,SEX,Female,1998,No data,,,
 6492660,COUNTRY,NPL,SEAR,South-East Asia,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6549231,COUNTRY,DNK,EUR,Europe,SEX,Female,1998,No data,,,
-6578964,COUNTRY,ISR,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6569417,COUNTRY,GAB,AFR,Africa,SEX,Female,1998,5.1 [3.5 - 7],5.1,3.5,7.0
+6578964,COUNTRY,ISR,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6601185,COUNTRY,NZL,WPR,Western Pacific,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 6628637,COUNTRY,MHL,WPR,Western Pacific,SEX,Female,1998,No data,,,
 6821166,COUNTRY,GBR,EUR,Europe,SEX,Female,1998,No data,,,
@@ -154,15 +154,15 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 7014099,COUNTRY,LBN,EMR,Eastern Mediterranean,SEX,Female,1998,<0.1 [<0.01 - <0.1],0.1,0.01,0.1
 7102814,COUNTRY,HTI,AMR,Americas,SEX,Female,1998,1.5 [1.3 - 1.8],1.5,1.3,1.8
 7194448,COUNTRY,BWA,AFR,Africa,SEX,Female,1998,25 [23 - 27],25.0,23.0,27.0
-7222632,COUNTRY,BRN,WPR,Western Pacific,SEX,Female,1998,No data,,,
 7205818,COUNTRY,LVA,EUR,Europe,SEX,Female,1998,0.15 [0.13 - 0.17],0.15,0.13,0.17
+7222632,COUNTRY,BRN,WPR,Western Pacific,SEX,Female,1998,No data,,,
 7279067,COUNTRY,PNG,WPR,Western Pacific,SEX,Female,1998,0.5 [0.43 - 0.56],0.5,0.43,0.56
 7402286,COUNTRY,SAU,EMR,Eastern Mediterranean,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 7619751,COUNTRY,SLV,AMR,Americas,SEX,Female,1998,0.21 [0.18 - 0.23],0.21,0.18,0.23
 7623260,COUNTRY,OMN,EMR,Eastern Mediterranean,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
+7647303,GLOBAL,GLOBAL,,,SEX,Female,1998,0.54 [0.41 - 0.71],0.54,0.41,0.71
 7658743,COUNTRY,ZAF,AFR,Africa,SEX,Female,1998,15 [13 - 16],15.0,13.0,16.0
 7659535,COUNTRY,FSM,WPR,Western Pacific,SEX,Female,1998,No data,,,
-7647303,GLOBAL,GLOBAL,,,SEX,Female,1998,0.54 [0.41 - 0.71],0.54,0.41,0.71
 7709743,COUNTRY,NRU,WPR,Western Pacific,SEX,Female,1998,No data,,,
 7723079,COUNTRY,ATG,AMR,Americas,SEX,Female,1998,No data,,,
 7768136,COUNTRY,UGA,AFR,Africa,SEX,Female,1998,5.6 [5.2 - 6.2],5.6,5.2,6.2
@@ -189,13 +189,13 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 8873525,COUNTRY,COL,AMR,Americas,SEX,Female,1998,0.13 [<0.1 - 0.19],0.13,0.1,0.19
 8934665,COUNTRY,CMR,AFR,Africa,SEX,Female,1998,No data,,,
 9059325,COUNTRY,PER,AMR,Americas,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
-9151699,COUNTRY,DOM,AMR,Americas,SEX,Female,1998,0.95 [0.79 - 1.2],0.95,0.79,1.2
 9137329,COUNTRY,ARE,EMR,Eastern Mediterranean,SEX,Female,1998,No data,,,
+9151699,COUNTRY,DOM,AMR,Americas,SEX,Female,1998,0.95 [0.79 - 1.2],0.95,0.79,1.2
 9199326,COUNTRY,PAK,EMR,Eastern Mediterranean,SEX,Female,1998,No data,,,
 9217374,COUNTRY,SUR,AMR,Americas,SEX,Female,1998,0.88 [0.75 - 1.1],0.88,0.75,1.1
 9270648,COUNTRY,LBY,EMR,Eastern Mediterranean,SEX,Female,1998,No data,,,
-9355379,COUNTRY,IRQ,EMR,Eastern Mediterranean,SEX,Female,1998,No data,,,
 9330652,COUNTRY,CZE,EUR,Europe,SEX,Female,1998,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+9355379,COUNTRY,IRQ,EMR,Eastern Mediterranean,SEX,Female,1998,No data,,,
 9381653,REGION,SEAR,,,SEX,Female,1998,0.3 [0.22 - 0.41],0.3,0.22,0.41
 9431580,COUNTRY,TKM,EUR,Europe,SEX,Female,1998,No data,,,
 9487086,COUNTRY,ISL,EUR,Europe,SEX,Female,1998,<0.1 [<0.1 - <0.1],0.1,0.1,0.1

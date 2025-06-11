@@ -1,7 +1,7 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
 10983,COUNTRY,BGD,SEAR,South-East Asia,1951,59.21,
-2932987,COUNTRY,THA,SEAR,South-East Asia,1951,0,
 2780939,COUNTRY,MMR,SEAR,South-East Asia,1951,69.38,
+2932987,COUNTRY,THA,SEAR,South-East Asia,1951,0,
 7649924,COUNTRY,KHM,WPR,Western Pacific,1951,70.18,
 9481575,COUNTRY,VNM,WPR,Western Pacific,1951,80.77,
 6367822,COUNTRY,IND,SEAR,South-East Asia,1951,47.87,

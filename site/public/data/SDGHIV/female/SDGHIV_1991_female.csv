@@ -1,7 +1,7 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEAR,Value,NumericValue,Low,High
 63914,COUNTRY,CAN,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
-78685,COUNTRY,SLV,AMR,Americas,SEX,Female,1991,0.13 [0.11 - 0.15],0.13,0.11,0.15
 70756,COUNTRY,MDA,EUR,Europe,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
+78685,COUNTRY,SLV,AMR,Americas,SEX,Female,1991,0.13 [0.11 - 0.15],0.13,0.11,0.15
 118184,COUNTRY,TGO,AFR,Africa,SEX,Female,1991,2.1 [1.5 - 2.7],2.1,1.5,2.7
 154789,COUNTRY,BHR,EMR,Eastern Mediterranean,SEX,Female,1991,No data,,,
 174223,COUNTRY,MOZ,AFR,Africa,SEX,Female,1991,3.7 [3.1 - 4.5],3.7,3.1,4.5
@@ -11,11 +11,11 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 293295,COUNTRY,CHE,EUR,Europe,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 377815,COUNTRY,WSM,WPR,Western Pacific,SEX,Female,1991,No data,,,
 380703,COUNTRY,VUT,WPR,Western Pacific,SEX,Female,1991,No data,,,
-426367,COUNTRY,LCA,AMR,Americas,SEX,Female,1991,No data,,,
 412922,COUNTRY,MNG,WPR,Western Pacific,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-500719,COUNTRY,SRB,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
+426367,COUNTRY,LCA,AMR,Americas,SEX,Female,1991,No data,,,
 480991,COUNTRY,HND,AMR,Americas,SEX,Female,1991,0.73 [0.56 - 1],0.73,0.56,1.0
 498102,COUNTRY,OMN,EMR,Eastern Mediterranean,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
+500719,COUNTRY,SRB,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
 568112,COUNTRY,TCD,AFR,Africa,SEX,Female,1991,2.1 [1.4 - 3.3],2.1,1.4,3.3
 583958,COUNTRY,TZA,AFR,Africa,SEX,Female,1991,6.8 [6.1 - 7.7],6.8,6.1,7.7
 624540,COUNTRY,HUN,EUR,Europe,SEX,Female,1991,No data,,,
@@ -30,16 +30,16 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 1057538,COUNTRY,MCO,EUR,Europe,SEX,Female,1991,No data,,,
 1151386,COUNTRY,BEL,EUR,Europe,SEX,Female,1991,No data,,,
 1226742,COUNTRY,BWA,AFR,Africa,SEX,Female,1991,21 [19 - 23],21.0,19.0,23.0
-1235134,REGION,AFR,,,SEX,Female,1991,4.2 [3.1 - 5.5],4.2,3.1,5.5
 1234104,COUNTRY,STP,AFR,Africa,SEX,Female,1991,2.9 [1.9 - 4.3],2.9,1.9,4.3
+1235134,REGION,AFR,,,SEX,Female,1991,4.2 [3.1 - 5.5],4.2,3.1,5.5
 1389576,COUNTRY,DOM,AMR,Americas,SEX,Female,1991,1.3 [0.91 - 2],1.3,0.91,2.0
-1452247,COUNTRY,URY,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - 0.18],0.1,0.1,0.18
 1444409,COUNTRY,LBR,AFR,Africa,SEX,Female,1991,3.6 [2.1 - 4.9],3.6,2.1,4.9
+1452247,COUNTRY,URY,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - 0.18],0.1,0.1,0.18
 1506555,COUNTRY,PAK,EMR,Eastern Mediterranean,SEX,Female,1991,No data,,,
+1530966,COUNTRY,FSM,WPR,Western Pacific,SEX,Female,1991,No data,,,
 1537496,COUNTRY,ZWE,AFR,Africa,SEX,Female,1991,29 [20 - 41],29.0,20.0,41.0
 1550974,COUNTRY,SDN,EMR,Eastern Mediterranean,SEX,Female,1991,<0.1 [<0.1 - 0.12],0.1,0.1,0.12
 1554009,COUNTRY,TUV,WPR,Western Pacific,SEX,Female,1991,No data,,,
-1530966,COUNTRY,FSM,WPR,Western Pacific,SEX,Female,1991,No data,,,
 1944477,COUNTRY,NAM,AFR,Africa,SEX,Female,1991,6.9 [6 - 8],6.9,6.0,8.0
 2008176,COUNTRY,GHA,AFR,Africa,SEX,Female,1991,2.4 [1.8 - 3.1],2.4,1.8,3.1
 2039871,COUNTRY,DNK,EUR,Europe,SEX,Female,1991,No data,,,
@@ -58,9 +58,9 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 2459564,COUNTRY,IDN,SEAR,South-East Asia,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 2471822,COUNTRY,TON,WPR,Western Pacific,SEX,Female,1991,No data,,,
 2486803,COUNTRY,HRV,EUR,Europe,SEX,Female,1991,No data,,,
+2642467,REGION,EMR,,,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 2649090,COUNTRY,COD,AFR,Africa,SEX,Female,1991,1.9 [1.4 - 2.5],1.9,1.4,2.5
 2649782,COUNTRY,BRB,AMR,Americas,SEX,Female,1991,0.6 [<0.1 - 0.98],0.6,0.1,0.98
-2642467,REGION,EMR,,,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 2716875,COUNTRY,LAO,WPR,Western Pacific,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 2784921,COUNTRY,FRA,EUR,Europe,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 2850380,COUNTRY,IND,SEAR,South-East Asia,SEX,Female,1991,No data,,,
@@ -68,27 +68,27 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 2896021,COUNTRY,GUY,AMR,Americas,SEX,Female,1991,0.41 [0.22 - 1.6],0.41,0.22,1.6
 2896417,COUNTRY,SYC,AFR,Africa,SEX,Female,1991,No data,,,
 2897489,COUNTRY,ARM,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-2924192,COUNTRY,YEM,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
 2909775,COUNTRY,GEO,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+2924192,COUNTRY,YEM,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
 2926566,COUNTRY,SMR,EUR,Europe,SEX,Female,1991,No data,,,
-2960703,COUNTRY,BGD,SEAR,South-East Asia,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 2939151,COUNTRY,ESP,EUR,Europe,SEX,Female,1991,0.13 [0.11 - 0.15],0.13,0.11,0.15
+2960703,COUNTRY,BGD,SEAR,South-East Asia,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 2987159,COUNTRY,QAT,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 3006191,COUNTRY,ARE,EMR,Eastern Mediterranean,SEX,Female,1991,No data,,,
 3015238,COUNTRY,GIN,AFR,Africa,SEX,Female,1991,0.73 [0.46 - 1.1],0.73,0.46,1.1
 3079359,COUNTRY,DMA,AMR,Americas,SEX,Female,1991,No data,,,
 3193344,COUNTRY,BTN,SEAR,South-East Asia,SEX,Female,1991,<0.1 [<0.01 - <0.1],0.1,0.01,0.1
-3280514,COUNTRY,TLS,SEAR,South-East Asia,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 3267615,COUNTRY,JAM,AMR,Americas,SEX,Female,1991,0.65 [0.4 - 1.3],0.65,0.4,1.3
 3278859,COUNTRY,MNE,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+3280514,COUNTRY,TLS,SEAR,South-East Asia,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 3317259,COUNTRY,NIC,AMR,Americas,SEX,Female,1991,0.11 [<0.1 - 0.17],0.11,0.1,0.17
 3371510,COUNTRY,CIV,AFR,Africa,SEX,Female,1991,8.5 [6.6 - 11],8.5,6.6,11.0
 3441010,COUNTRY,ARG,AMR,Americas,SEX,Female,1991,0.1 [<0.1 - 0.13],0.1,0.1,0.13
 3584218,COUNTRY,PAN,AMR,Americas,SEX,Female,1991,0.21 [0.18 - 0.26],0.21,0.18,0.26
 3681415,COUNTRY,JOR,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 3712187,COUNTRY,SYR,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
-3732302,COUNTRY,SVK,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 3718148,REGION,WPR,,,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+3732302,COUNTRY,SVK,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 3847727,COUNTRY,KIR,WPR,Western Pacific,SEX,Female,1991,No data,,,
 3926153,COUNTRY,LSO,AFR,Africa,SEX,Female,1991,9.5 [7.9 - 12],9.5,7.9,12.0
 3927712,COUNTRY,PRT,EUR,Europe,SEX,Female,1991,0.21 [0.18 - 0.23],0.21,0.18,0.23
@@ -116,8 +116,8 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 5080415,COUNTRY,IRL,EUR,Europe,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5091406,COUNTRY,IRQ,EMR,Eastern Mediterranean,SEX,Female,1991,No data,,,
 5119829,COUNTRY,NGA,AFR,Africa,SEX,Female,1991,1.6 [1.3 - 1.8],1.6,1.3,1.8
-5181298,COUNTRY,CHL,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5177175,COUNTRY,VNM,WPR,Western Pacific,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
+5181298,COUNTRY,CHL,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 5207392,COUNTRY,MLI,AFR,Africa,SEX,Female,1991,1.7 [1.1 - 2.4],1.7,1.1,2.4
 5253012,COUNTRY,KWT,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 5286761,COUNTRY,PER,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - 0.1],0.1,0.1,0.1
@@ -129,16 +129,16 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 5596139,COUNTRY,TKM,EUR,Europe,SEX,Female,1991,No data,,,
 5597114,COUNTRY,VCT,AMR,Americas,SEX,Female,1991,No data,,,
 5637583,COUNTRY,FJI,WPR,Western Pacific,SEX,Female,1991,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
-6061249,COUNTRY,CPV,AFR,Africa,SEX,Female,1991,0.41 [0.27 - 0.72],0.41,0.27,0.72
 6058876,COUNTRY,SOM,EMR,Eastern Mediterranean,SEX,Female,1991,0.48 [0.33 - 0.71],0.48,0.33,0.71
+6061249,COUNTRY,CPV,AFR,Africa,SEX,Female,1991,0.41 [0.27 - 0.72],0.41,0.27,0.72
 6095804,COUNTRY,MUS,AFR,Africa,SEX,Female,1991,<0.1 [<0.1 - 0.67],0.1,0.1,0.67
 6122131,COUNTRY,BLZ,AMR,Americas,SEX,Female,1991,0.27 [0.21 - 0.34],0.27,0.21,0.34
 6160095,COUNTRY,BFA,AFR,Africa,SEX,Female,1991,2.4 [1.7 - 3.1],2.4,1.7,3.1
 6197325,COUNTRY,AFG,EMR,Eastern Mediterranean,SEX,Female,1991,<0.01 [<0.01 - <0.1],0.01,0.01,0.1
 6243175,COUNTRY,POL,EUR,Europe,SEX,Female,1991,No data,,,
+6270417,COUNTRY,MEX,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6306078,GLOBAL,GLOBAL,,,SEX,Female,1991,0.51 [0.39 - 0.67],0.51,0.39,0.67
 6309989,COUNTRY,ZMB,AFR,Africa,SEX,Female,1991,16 [14 - 18],16.0,14.0,18.0
-6270417,COUNTRY,MEX,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6314752,COUNTRY,ISR,EUR,Europe,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 6327512,COUNTRY,KAZ,EUR,Europe,SEX,Female,1991,No data,,,
 6455899,REGION,EUR,,,SEX,Female,1991,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
@@ -191,12 +191,12 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 9067793,COUNTRY,LBY,EMR,Eastern Mediterranean,SEX,Female,1991,No data,,,
 9105128,COUNTRY,TTO,AMR,Americas,SEX,Female,1991,No data,,,
 9113231,COUNTRY,KEN,AFR,Africa,SEX,Female,1991,13 [7 - 22],13.0,7.0,22.0
-9150835,COUNTRY,ALB,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 9144550,COUNTRY,COG,AFR,Africa,SEX,Female,1991,4.9 [3.9 - 6.2],4.9,3.9,6.2
-9302383,COUNTRY,GRD,AMR,Americas,SEX,Female,1991,No data,,,
+9150835,COUNTRY,ALB,EUR,Europe,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 9284805,COUNTRY,PLW,WPR,Western Pacific,SEX,Female,1991,No data,,,
+9302383,COUNTRY,GRD,AMR,Americas,SEX,Female,1991,No data,,,
 9333684,COUNTRY,AND,EUR,Europe,SEX,Female,1991,No data,,,
 9546984,COUNTRY,JPN,WPR,Western Pacific,SEX,Female,1991,No data,,,
-9642147,COUNTRY,LKA,SEAR,South-East Asia,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 9625066,COUNTRY,CYP,EUR,Europe,SEX,Female,1991,No data,,,
+9642147,COUNTRY,LKA,SEAR,South-East Asia,SEX,Female,1991,<0.01 [<0.01 - <0.01],0.01,0.01,0.01
 9764335,COUNTRY,BOL,AMR,Americas,SEX,Female,1991,<0.1 [<0.1 - 0.23],0.1,0.1,0.23
