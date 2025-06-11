@@ -32,7 +32,7 @@ export default function GraphPage() {
       setCurrentData(data);
       setCurrentIndicator(selectedIndicator);
       setCurrentMax(max);
-      setCurrentYear(year);
+      setCurrentYear(selectedIndicator.end);
     });
   });
 
@@ -51,7 +51,7 @@ export default function GraphPage() {
         <div className="flex h-full w-full flex-col p-5">
           <h1 className="ml-8 text-4xl font-bold">
             {selectedIndicator
-              ? selectedIndicator.title
+              ? `${selectedIndicator.title} (${currentYear})`
               : "Select an indicator to start"}
           </h1>
           <p className="ml-8 min-h-12 text-lg text-zinc-600">
@@ -79,6 +79,9 @@ export default function GraphPage() {
               })}
             </div>
           </div>
+          <p className="mx-8 text-lg text-zinc-600 text-center">
+            {selectedIndicator ? selectedIndicator.subtitle : ""}
+          </p>
         </div>
       </div>
     </div>
