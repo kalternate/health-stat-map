@@ -84,7 +84,11 @@ export default function MapPageContent() {
 
   return (
     <div className="flex h-full grow flex-row">
-      <IndicatorList selectedIndicator={selectedIndicator} indicatorCategories={indicatorCategories} setSelectedIndicator={setSelectedIndicator}/>
+      <IndicatorList
+        selectedIndicator={selectedIndicator}
+        indicatorCategories={indicatorCategories}
+        setSelectedIndicator={setSelectedIndicator}
+      />
       <div className="relative grow">
         <MapView
           data={currentData}

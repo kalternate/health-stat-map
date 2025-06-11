@@ -17,6 +17,12 @@ export default function TopPanel() {
       </NavLink>
       <NavLink
         className="text-xl text-zinc-600 underline hover:text-rose-700"
+        to="/graph"
+      >
+        Graph
+      </NavLink>
+      <NavLink
+        className="text-xl text-zinc-600 underline hover:text-rose-700"
         to="/support"
       >
         Support
