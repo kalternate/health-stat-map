@@ -33,6 +33,7 @@ export default function GraphPage() {
       setCurrentIndicator(selectedIndicator);
       setCurrentMax(max);
       setCurrentYear(selectedIndicator.end);
+      setSelectedYear(selectedIndicator.end);
     });
   });
 
