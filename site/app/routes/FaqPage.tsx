@@ -108,7 +108,7 @@ const faqs: Faq[] = [
 // FAQ page component
 export default function FaqPage() {
   return (
-    <Article>
+    <article>
       <div className="faq-page">
         <header>
           <h1>HealthStatMap</h1>
@@ -136,6 +136,6 @@ export default function FaqPage() {
           </p>
         </footer>
       </div>
-    </Article>
+    </article>
   );
 }
