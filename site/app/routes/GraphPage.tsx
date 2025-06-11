@@ -21,25 +21,24 @@ export default function GraphPage() {
   const [currentYear, setCurrentYear] = useState<number>(NaN);
   const indicatorCategories: IndicatorCategory[] = dataManifest;
 
-   useEffect(() => {
-      if (selectedIndicator === null) return;
-      const year = isNaN(selectedYear) ? selectedIndicator.end : selectedYear;
-      if (isNaN(selectedYear)) setSelectedYear(year);
-      if (selectedIndicator.id === currentIndicator?.id && year === currentYear)
-        return;
-  
-      loadData(selectedIndicator, year, (data, max) => {
-        setCurrentData(data);
-        setCurrentIndicator(selectedIndicator);
-        setCurrentMax(max);
-        setCurrentYear(year);
-      });
+  useEffect(() => {
+    if (selectedIndicator === null) return;
+    const year = isNaN(selectedYear) ? selectedIndicator.end : selectedYear;
+    if (isNaN(selectedYear)) setSelectedYear(year);
+    if (selectedIndicator.id === currentIndicator?.id && year === currentYear)
+      return;
+
+    loadData(selectedIndicator, year, (data, max) => {
+      setCurrentData(data);
+      setCurrentIndicator(selectedIndicator);
+      setCurrentMax(max);
+      setCurrentYear(year);
     });
+  });
 
-    let indexCounter = 0;
+  let indexCounter = 0;
 
-    const spanLength = currentMax / mapColors.length;
-
+  const spanLength = currentMax / mapColors.length;
 
   return (
     <div className="flex h-full grow flex-row">
@@ -49,23 +48,39 @@ export default function GraphPage() {
         setSelectedIndicator={setSelectedIndicator}
       />
       <div className="relative grow">
-        <div className="w-full h-full flex flex-col p-5">
-        <h1 className="text-4xl font-bold ml-8">{selectedIndicator ? selectedIndicator.title : "Select an indicator to start"}</h1>
-        <p className="min-h-12 text-lg text-zinc-600 ml-8">{selectedIndicator ? selectedIndicator.subtitle + "." : ""}</p>
-        <div className="flex flex-row h-full">
-        <div className="[writing-mode:sideways-lr] text-center text-zinc-600 text-lg w-8"># of countries</div>
-        <div className="flex flex-row h-full w-full mr-8">
-            {mapColors.map(color => {
+        <div className="flex h-full w-full flex-col p-5">
+          <h1 className="ml-8 text-4xl font-bold">
+            {selectedIndicator
+              ? selectedIndicator.title
+              : "Select an indicator to start"}
+          </h1>
+          <p className="ml-8 min-h-12 text-lg text-zinc-600">
+            {selectedIndicator ? selectedIndicator.subtitle + "." : ""}
+          </p>
+          <div className="flex h-full flex-row">
+            <div className="w-8 text-center text-lg text-zinc-600 [writing-mode:sideways-lr]">
+              # of countries
+            </div>
+            <div className="mr-8 flex h-full w-full flex-row">
+              {mapColors.map((color) => {
                 const index = indexCounter;
                 indexCounter += 1;
                 const spanMin = spanLength * index;
-                const spanMax = spanLength * (index+1);
-                return <GraphCol color={color} data={currentData} spanMin={spanMin} spanMax={spanMax} last={index === mapColors.length-1} />
-            })}
+                const spanMax = spanLength * (index + 1);
+                return (
+                  <GraphCol
+                    color={color}
+                    data={currentData}
+                    spanMin={spanMin}
+                    spanMax={spanMax}
+                    last={index === mapColors.length - 1}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
-        </div>
-        </div>
     </div>
   );
 }
