@@ -113,7 +113,7 @@ def split(cli = False, df = None, indicator_name=None):
 
         df = pd.read_parquet(in_file)
     else:
-        out_dir = "data"
+        out_dir = "site/public/data"
         
     if not cli and df is None:
         return

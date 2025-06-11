@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import type { Indicator } from "~/routes/MapPage";
+import type { Indicator } from "~/components/MapPageContent";
 import { mapColors, numberFormatter } from "~/utils";
 
 interface MapKeyProps {
@@ -30,10 +30,13 @@ export default function MapKey(props: MapKeyProps) {
               />
 
               <div className="text-right">
-                {numberFormatter.format(spanLength * (colorIndex + 1))}
+                {" "}
+                {numberFormatter.format(spanLength * colorIndex)}
               </div>
               <div> &ndash; </div>
-              <div> {numberFormatter.format(spanLength * colorIndex)}</div>
+              <div className="text-left">
+                {numberFormatter.format(spanLength * (colorIndex + 1))}
+              </div>
             </div>
           );
         })}

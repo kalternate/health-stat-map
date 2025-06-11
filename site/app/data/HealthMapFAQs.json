@@ -38,5 +38,41 @@
   {
     "question": "How can I share this map with others?",
     "answer": "The map can be shared by copying the link for the website. Screenshots can also be uploaded to social media, email, or other education platforms to help raise awareness."
+  },
+  {
+    "question": "How can I learn about the infectious diseases this map shows?",
+    "answer": "A brief description of the prevalent and curable infectious diseases our tool explores and why they matter can be found on the landing page."
+  },
+  {
+    "question": "How do I get to the interactive map?",
+    "answer": "When you wish to navigate to the interactive map, you can either click on the Map page tab located at the top of the site or use the Launch HealthMap feature on the landing page."
+  },
+  {
+    "question": "How do I select a disease to explore?",
+    "answer": "Once on the interactive map, you can select the different diseases you would like to explore in the panel on the left-hand side of the site. Our site explores the diseases of Malaria, Tuberculosis (TB), HIV/AIDS, and Cholera. Clicking on a disease will open a dropdown menu of different data sets to explore in the map."
+  },
+  {
+    "question": "How do I view the statistics from a specific country?",
+    "answer": "You can click on a country to see its statistics and use the key located in the bottom left of the map to interpret the burden of disease indicated by different shades of color."
+  },
+  {
+    "question": "How do I view the impact a selected disease has had over time?",
+    "answer": "Use the time slider to view how the impact of the selected disease has changed over time. The time slider can be found in the lower left of the map next to the key. Click and drag the circle to your preferred year and release. You will see the map change to the statistics of that newly selected year."
+  },
+  {
+    "question": "How do I zoom in and out on the map?",
+    "answer": "You can zoom in and out on the map either by scrolling or using the plus and minus icons located in the top left of the map. To move the map around in the zoomed in view, you can pan over the map by clicking and dragging."
+  },
+  {
+    "question": "How do I get to the Support Page?",
+    "answer": "When you wish to navigate to the support page, you can either click on the Support page tab located at the top of the site or use the Support NGOs feature on the landing page."
+  },
+  {
+    "question": "How do I use the Support Page?",
+    "answer": "Once on the Support page, links are provided to three sites that may be useful to you in helping you to make informed decisions about possible places to donate. Scroll through our list of vetted NGOs and read about them. If you wish to donate or to further explore one of the NGOs listed, click on either the name or logo of the desired NGO and you will be brought to the official website of that NGO."
+  },
+  {
+    "question": "How do I get back to the Landing Page of our site?",
+    "answer": "At any time, you can navigate back to the landing page by clicking on the HealthStatMap logo in the top left-hand corner of the site."
   }
 ]

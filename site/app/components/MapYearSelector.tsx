@@ -1,5 +1,5 @@
 import type { ChangeEvent } from "react";
-import type { Indicator } from "~/routes/MapPage";
+import type { Indicator } from "~/components/MapPageContent";
 
 interface MapYearSelectorProps {
   selectedYear: number;
@@ -20,6 +20,7 @@ export default function MapYearSelector(props: MapYearSelectorProps) {
       <div>{props.selectedYear}</div>
       <input
         name="year-selector"
+        className="accent-zinc-200"
         type="range"
         min={props.indicator.start}
         max={props.indicator.end}

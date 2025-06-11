@@ -56,12 +56,14 @@ export default function SupportPage() {
         most per dollar.
       </NgoCard>
 
-      <hr className="mx-10" />
+      <hr />
 
       <h2 className="my-2 text-2xl">
         Major Reputable NGOs Working on Combating{" "}
         <span className="font-bold">Global Health Issues</span>
       </h2>
+
+      <hr />
 
       <NgoCard
         to="https://www.theglobalfund.org/en/"
@@ -72,6 +74,8 @@ export default function SupportPage() {
         providing funding and support for programs in low- and middle-income
         countries.
       </NgoCard>
+
+      <hr className="mx-10" />
 
       <NgoCard
         to="https://www.who.int/"
@@ -84,6 +88,8 @@ export default function SupportPage() {
         strengthen healthcare systems.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://www.gatesfoundation.org/"
         imgSrc="images/GatesFoundation_Logo.png"
@@ -92,6 +98,8 @@ export default function SupportPage() {
         A private foundation with a global focus on improving health and
         education, especially in low- and middle-income countries.
       </NgoCard>
+
+      <hr className="mx-10" />
 
       <NgoCard
         to="https://www.doctorswithoutborders.org/"
@@ -103,6 +111,8 @@ export default function SupportPage() {
         in countries affected by conflicts and epidemics, including those
         related to AIDS, malaria, and cholera.
       </NgoCard>
+
+      <hr className="mx-10" />
 
       <NgoCard
         to="https://www.unicef.org/"
@@ -118,6 +128,8 @@ export default function SupportPage() {
         cholera control.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://www.villagereach.org/"
         imgSrc="images/VillageReach_Logo.png"
@@ -128,10 +140,14 @@ export default function SupportPage() {
         underserved communities.
       </NgoCard>
 
+      <hr />
+
       <h2 className="my-2 text-2xl">
         Reputable NGOs Working on Combating Malaria Globally
         <span className="font-bold"> Global Health Issues</span>
       </h2>
+
+      <hr />
 
       <NgoCard
         to="https://www.malarianomore.org/"
@@ -145,6 +161,8 @@ export default function SupportPage() {
         finance to drive meaningful change.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://www.againstmalaria.com/"
         imgSrc="images/AgainstMalariaFoundation_Logo.png"
@@ -156,6 +174,8 @@ export default function SupportPage() {
         countries. They are known for being a cost-effective organization.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://www.psi.org/"
         imgSrc="images/PSI_logo.png"
@@ -166,10 +186,14 @@ export default function SupportPage() {
         malaria treatment, and implementing behavior change communications.
       </NgoCard>
 
+      <hr />
+
       <h2 className="my-2 text-2xl">
         Reputable NGO Working on Combating Tuberculosis (TB) Globally
         <span className="font-bold"> Global Health Issues</span>
       </h2>
+
+      <hr />
 
       <NgoCard
         to="https://www.tballiance.org/"
@@ -181,10 +205,14 @@ export default function SupportPage() {
         to improve treatment outcomes for people with TB.
       </NgoCard>
 
+      <hr />
+
       <h2 className="my-2 text-2xl">
         Reputable NGOs Working on Combating HIV/AIDS Globally
         <span className="font-bold"> Global Health Issues</span>
       </h2>
+
+      <hr />
 
       <NgoCard
         to="https://www.unaids.org/en"
@@ -195,6 +223,8 @@ export default function SupportPage() {
         advocacy, research, and technical assistance their mission is to end the
         AIDS epidemic as a global public health threat by 2030.
       </NgoCard>
+
+      <hr className="mx-10" />
 
       <NgoCard
         to="https://www.eltonjohnaidsfoundation.org/"
@@ -207,6 +237,8 @@ export default function SupportPage() {
         treatment, care, and support services.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://www.aidshealth.org/"
         imgSrc="images/AHF_Logo.png"
@@ -217,10 +249,14 @@ export default function SupportPage() {
         advocacy services.
       </NgoCard>
 
+      <hr />
+
       <h2 className="my-2 text-2xl">
         Reputable NGOs Working on Combating Cholera Globally
         <span className="font-bold"> Global Health Issues</span>
       </h2>
+
+      <hr />
 
       <NgoCard
         to="https://internationalmedicalcorps.org/"
@@ -232,6 +268,8 @@ export default function SupportPage() {
         cholera.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://www.wateraid.org/us/"
         imgSrc="images/WaterAid_Logo.png"
@@ -242,6 +280,8 @@ export default function SupportPage() {
         prevent cholera outbreaks and improve overall water security.
       </NgoCard>
 
+      <hr className="mx-10" />
+
       <NgoCard
         to="https://alima.ngo/en/"
         imgSrc="images/ALIMA_Logo.jpg"
@@ -251,6 +291,8 @@ export default function SupportPage() {
         centers, providing oral rehydration stations, and implementing awareness
         campaigns.
       </NgoCard>
+
+      <hr className="mx-10" />
     </Article>
   );
 }

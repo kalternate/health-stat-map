@@ -93,7 +93,7 @@
         "title": "HIV mortality",
         "subtitle": "Deaths due to HIV/AIDS per 1,000,000 people",
         "category": "hiv",
-        "start": 2001,
+        "start": 2012,
         "end": 2012
       },
       {
@@ -101,7 +101,7 @@
         "title": "People living with HIV",
         "subtitle": "Number of people living with HIV (estimated)",
         "category": "hiv",
-        "start": 1990,
+        "start": 2000,
         "end": 2023
       },
       {
@@ -109,7 +109,7 @@
         "title": "New HIV infections",
         "subtitle": "Number of new HIV infections",
         "category": "hiv",
-        "start": 1990,
+        "start": 2000,
         "end": 2023
       },
       {
@@ -117,7 +117,7 @@
         "title": "HIV deaths",
         "subtitle": "Number of people dying from HIV-related causes",
         "category": "hiv",
-        "start": 1990,
+        "start": 2000,
         "end": 2023
       }
     ]
