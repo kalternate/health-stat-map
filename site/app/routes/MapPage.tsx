@@ -1,10 +1,10 @@
-import CategoryDropdown from "~/components/CategoryDropdown";
 import MapView from "../components/MapView";
 import dataManifest from "../data/data_manifest.json";
 import { useEffect, useState } from "react";
-import { parse } from "papaparse";
 import MapKey from "~/components/MapKey";
 import MapYearSelector from "~/components/MapYearSelector";
+import IndicatorList from "~/components/IndicatorList";
+import { loadData } from "~/utils";
 
 export interface IndicatorCategory {
   id: string;
@@ -65,49 +65,19 @@ export default function MapPage() {
       return;
     if (renderDelay > 0) return;
 
-    let url = `/data/${selectedIndicator.id}/${selectedIndicator.id}_${year}.csv`;
-    if (selectedIndicator.gendered) {
-      url = `/data/${selectedIndicator.id}/${selectedIndicator.id}_${year}_both.csv`;
-    }
+  console.log(year);
 
-    const newData = new Map<string, number>();
-    let newMax = 0;
-
-    parse(url, {
-      download: true,
-      header: true,
-      step: (step) => {
-        const data: any = step.data;
-        if (data.SpatialDimType === "COUNTRY") {
-          const value = parseFloat(data.NumericValue);
-          if (isNaN(value)) return;
-
-          newData.set(data.SpatialDim, value);
-          if (value > newMax) newMax = value;
-        }
-      },
-      complete: () => {
-        setCurrentData(newData);
-        setCurrentIndicator(selectedIndicator);
-        setCurrentMax(newMax);
-        setCurrentYear(year);
-      },
+    loadData(selectedIndicator, year, (data, max) => {
+      setCurrentData(data);
+      setCurrentIndicator(selectedIndicator);
+      setCurrentMax(max);
+      setCurrentYear(year);
     });
   });
 
-  return (
+  return <>
     <div className="flex h-full grow flex-row">
-      <div className="flex w-sm flex-col overflow-y-auto border-r-1 border-zinc-600">
-        {indicatorCategories.map((category) => {
-          return (
-            <CategoryDropdown
-              category={category}
-              selectedIndicator={selectedIndicator}
-              setSelectedIndicator={setSelectedIndicator}
-            />
-          );
-        })}
-      </div>
+      <IndicatorList selectedIndicator={selectedIndicator} indicatorCategories={indicatorCategories} setSelectedIndicator={setSelectedIndicator}/>
       <div className="relative grow">
         <MapView
           data={currentData}
@@ -128,5 +98,6 @@ export default function MapPage() {
         </div>
       </div>
     </div>
-  );
+    </>
+  ;
 }
