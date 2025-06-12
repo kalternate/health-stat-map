@@ -1,4 +1,5 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEAR,Value,NumericValue,Low,High
+9055406,COUNTRY,ITA,EUR,Europe,SEX,Male,2023,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 30740,COUNTRY,NER,AFR,Africa,SEX,Male,2023,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 43835,COUNTRY,ARM,EUR,Europe,SEX,Male,2023,0.3 [0.26 - 0.35],0.3,0.26,0.35
 72556,COUNTRY,KNA,AMR,Americas,SEX,Male,2023,No data,,,
@@ -186,7 +187,6 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 8873817,COUNTRY,IRN,EMR,Eastern Mediterranean,SEX,Male,2023,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 9025496,COUNTRY,KEN,AFR,Africa,SEX,Male,2023,0.22 [0.13 - 0.35],0.22,0.13,0.35
 9053986,COUNTRY,PER,AMR,Americas,SEX,Male,2023,0.27 [0.2 - 0.37],0.27,0.2,0.37
-9055406,COUNTRY,ITA,EUR,Europe,SEX,Male,2023,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 9114352,COUNTRY,SMR,EUR,Europe,SEX,Male,2023,No data,,,
 9161091,COUNTRY,PAN,AMR,Americas,SEX,Male,2023,0.52 [0.42 - 0.59],0.52,0.42,0.59
 9215195,COUNTRY,YEM,EMR,Eastern Mediterranean,SEX,Male,2023,<0.1 [<0.1 - <0.1],0.1,0.1,0.1

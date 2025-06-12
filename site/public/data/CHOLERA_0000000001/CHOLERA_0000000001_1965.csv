@@ -1,6 +1,5 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
 249448,COUNTRY,IND,SEAR,South-East Asia,1965,42677,
-806657,COUNTRY,PHL,WPR,Western Pacific,1965,4581,
 1399653,COUNTRY,BRN,WPR,Western Pacific,1965,198,
 2221784,COUNTRY,THA,SEAR,South-East Asia,1965,65,
 2248632,COUNTRY,PAK,EMR,Eastern Mediterranean,1965,21,
@@ -12,3 +11,4 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,Numeri
 9073055,COUNTRY,MYS,WPR,Western Pacific,1965,16,
 9269878,COUNTRY,BGD,SEAR,South-East Asia,1965,1123,
 9407122,COUNTRY,MMR,SEAR,South-East Asia,1965,207,
+806657,COUNTRY,PHL,WPR,Western Pacific,1965,4581,

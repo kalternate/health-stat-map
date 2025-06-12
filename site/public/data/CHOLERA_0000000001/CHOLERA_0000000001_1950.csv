@@ -1,6 +1,6 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
-1018442,COUNTRY,VNM,WPR,Western Pacific,1950,9,
+1345492,COUNTRY,MMR,SEAR,South-East Asia,1950,4212,
 5597791,COUNTRY,IND,SEAR,South-East Asia,1950,625,
 5814120,COUNTRY,KHM,WPR,Western Pacific,1950,10,
+1018442,COUNTRY,VNM,WPR,Western Pacific,1950,9,
 7318441,COUNTRY,BGD,SEAR,South-East Asia,1950,29809,
-1345492,COUNTRY,MMR,SEAR,South-East Asia,1950,4212,

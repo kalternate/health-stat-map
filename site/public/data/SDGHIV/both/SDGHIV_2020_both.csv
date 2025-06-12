@@ -1,5 +1,4 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEAR,Value,NumericValue,Low,High
-4727581,COUNTRY,GEO,EUR,Europe,SEX,Both,2020,0.16 [0.15 - 0.17],0.16,0.15,0.17
 11764,COUNTRY,SAU,EMR,Eastern Mediterranean,SEX,Both,2020,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 11805,COUNTRY,ESP,EUR,Europe,SEX,Both,2020,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 23895,COUNTRY,CRI,AMR,Americas,SEX,Both,2020,0.19 [0.14 - 0.25],0.19,0.14,0.25
@@ -88,6 +87,7 @@ Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,Dim1Type,Dim1,YEA
 4589335,COUNTRY,SVK,EUR,Europe,SEX,Both,2020,<0.1 [<0.1 - <0.1],0.1,0.1,0.1
 4611005,COUNTRY,SLE,AFR,Africa,SEX,Both,2020,0.6 [0.42 - 0.83],0.6,0.42,0.83
 4683700,COUNTRY,IND,SEAR,South-East Asia,SEX,Both,2020,No data,,,
+4727581,COUNTRY,GEO,EUR,Europe,SEX,Both,2020,0.16 [0.15 - 0.17],0.16,0.15,0.17
 4738332,COUNTRY,WSM,WPR,Western Pacific,SEX,Both,2020,No data,,,
 4765220,COUNTRY,LSO,AFR,Africa,SEX,Both,2020,4.2 [3.3 - 5.5],4.2,3.3,5.5
 4765484,COUNTRY,SLV,AMR,Americas,SEX,Both,2020,0.13 [0.1 - 0.15],0.13,0.1,0.15
