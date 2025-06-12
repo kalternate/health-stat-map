@@ -89,14 +89,6 @@
         "gendered": true
       },
       {
-        "id": "WHS2_138",
-        "title": "HIV mortality",
-        "subtitle": "Deaths due to HIV/AIDS per 1,000,000 people",
-        "category": "hiv",
-        "start": 2012,
-        "end": 2012
-      },
-      {
         "id": "HIV_0000000001",
         "title": "People living with HIV",
         "subtitle": "Number of people living with HIV (estimated)",

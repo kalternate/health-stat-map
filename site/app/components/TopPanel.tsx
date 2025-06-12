@@ -33,6 +33,12 @@ export default function TopPanel() {
       >
         FAQ
       </NavLink>
+      <NavLink
+        className="text-xl text-zinc-600 underline hover:text-rose-700"
+        to="https://sites.google.com/view/healthstatmap/home"
+      >
+        About
+      </NavLink>
     </div>
   );
 }
