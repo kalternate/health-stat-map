@@ -21,6 +21,13 @@ export default function GraphPage() {
   const [currentYear, setCurrentYear] = useState<number>(NaN);
   const indicatorCategories: IndicatorCategory[] = dataManifest;
 
+  const selectIndicator = (indicator: Indicator) => {
+    setSelectedIndicator(indicator);
+    setSelectedYear(
+      Math.max(Math.min(selectedYear, indicator.end), indicator.start),
+    );
+  };
+
   useEffect(() => {
     if (selectedIndicator === null) return;
     const year = isNaN(selectedYear) ? selectedIndicator.end : selectedYear;
@@ -32,8 +39,7 @@ export default function GraphPage() {
       setCurrentData(data);
       setCurrentIndicator(selectedIndicator);
       setCurrentMax(max);
-      setCurrentYear(selectedIndicator.end);
-      setSelectedYear(selectedIndicator.end);
+      setCurrentYear(year);
     });
   });
 
@@ -46,7 +52,7 @@ export default function GraphPage() {
       <IndicatorList
         selectedIndicator={selectedIndicator}
         indicatorCategories={indicatorCategories}
-        setSelectedIndicator={setSelectedIndicator}
+        setSelectedIndicator={selectIndicator}
       />
       <div className="relative grow">
         <div className="flex h-full w-full flex-col p-5">
