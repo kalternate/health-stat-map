@@ -87,7 +87,7 @@ export default function MapPageContent() {
       <IndicatorList
         selectedIndicator={selectedIndicator}
         indicatorCategories={indicatorCategories}
-        setSelectedIndicator={setSelectedIndicator}
+        setSelectedIndicator={selectIndicator}
       />
       <div className="relative grow">
         <MapView
