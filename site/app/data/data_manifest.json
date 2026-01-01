@@ -9,7 +9,7 @@
         "subtitle": "Malaria cases per 1,000 people at risk (estimated)",
         "category": "malaria",
         "start": 2000,
-        "end": 2023
+        "end": 2024
       },
       {
         "id": "MALARIA_EST_MORTALITY",
@@ -17,7 +17,7 @@
         "subtitle": "Malaria deaths per 1,000,000 people (estimated)",
         "category": "malaria",
         "start": 2000,
-        "end": 2023
+        "end": 2024
       },
       {
         "id": "MALARIA_EST_CASES",
@@ -25,7 +25,7 @@
         "subtitle": "Number of malaria cases (estimated)",
         "category": "malaria",
         "start": 2000,
-        "end": 2023
+        "end": 2024
       },
       {
         "id": "MALARIA_EST_DEATHS",
@@ -33,7 +33,7 @@
         "subtitle": "Number of malaria deaths (estimated)",
         "category": "malaria",
         "start": 2000,
-        "end": 2023
+        "end": 2024
       }
     ]
   },
