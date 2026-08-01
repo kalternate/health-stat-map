@@ -1,6 +1,6 @@
 Id,SpatialDimType,SpatialDim,ParentLocationCode,ParentLocation,YEAR,Value,NumericValue
-4899376,COUNTRY,BGD,SEAR,South-East Asia,1960,40.16,
-4591406,COUNTRY,AFG,EMR,Eastern Mediterranean,1960,22.44,
-1424687,COUNTRY,IDN,WPR,Western Pacific,1960,53.66,
-2442638,COUNTRY,MMR,SEAR,South-East Asia,1960,77.22,
-8192741,COUNTRY,PAK,EMR,Eastern Mediterranean,1960,16.51,
+1503427,COUNTRY,IDN,WPR,Western Pacific,1960,53.66,
+2467885,COUNTRY,MMR,SEAR,South-East Asia,1960,77.22,
+4503931,COUNTRY,AFG,EMR,Eastern Mediterranean,1960,22.44,
+4795715,COUNTRY,BGD,SEAR,South-East Asia,1960,40.16,
+7916975,COUNTRY,PAK,EMR,Eastern Mediterranean,1960,16.51,
