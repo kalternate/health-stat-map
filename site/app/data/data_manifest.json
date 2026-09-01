@@ -85,7 +85,7 @@
         "subtitle": "New HIV infections per 1,000 uninfected people",
         "category": "hiv",
         "start": 1990,
-        "end": 2024,
+        "end": 2025,
         "gendered": true
       },
       {
@@ -94,7 +94,7 @@
         "subtitle": "Number of people living with HIV (estimated)",
         "category": "hiv",
         "start": 2000,
-        "end": 2024
+        "end": 2025
       },
       {
         "id": "HIV_0000000026",
@@ -102,7 +102,7 @@
         "subtitle": "Number of new HIV infections",
         "category": "hiv",
         "start": 2000,
-        "end": 2024
+        "end": 2025
       },
       {
         "id": "HIV_0000000006",
@@ -110,7 +110,7 @@
         "subtitle": "Number of people dying from HIV-related causes",
         "category": "hiv",
         "start": 2000,
-        "end": 2024
+        "end": 2025
       }
     ]
   },
